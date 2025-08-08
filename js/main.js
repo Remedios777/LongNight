@@ -496,3 +496,14 @@ function createGalleryItemHTML(src, title, description) {
         </div>
     `;
 }
+
+
+function toggleSecret(btn) {
+    const content = btn.parentElement.nextElementSibling;
+    const open = content.classList.toggle('show');
+    btn.textContent = open ? '🔓 收起录音文本' : '🔒 点击展开录音文本';
+}
+
+
+
+

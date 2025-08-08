@@ -1501,4 +1501,273 @@ body {
     .paro-image {
         margin-bottom: 1.5rem;
     }
+
 }
+
+/* 隱藏風格的灰色小字 */
+.subtle-note {
+    color: #888888;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.access-tag {
+    font-size: 0.85rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.level-1 {
+    background-color: #3498db;
+}
+
+.level-2 {
+    background-color: #3498db;
+}
+
+.level-4 {
+    background-color: #e74c3c;
+}
+
+.indent {
+    text-indent: 2em;
+}
+
+.subhead {
+    font-weight: 600;
+    color: #f1c40f;
+    margin-top: 1rem;
+}
+
+.stage-title {
+    font-weight: bold;
+    color: #a3e4ff;
+    margin-top: 1.5rem;
+    border-left: 4px solid #3498db;
+    padding-left: 0.5rem;
+}
+
+.emphasis {
+    color: #ce2d2d;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 1rem 0;
+}
+
+
+
+.unlock-banner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(52, 152, 219, 0.1); /* 淡藍底 */
+    border: 1px solid rgba(52, 152, 219, 0.3); /* 藍邊框 */
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin: 16px 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: #84bfff; /* 深一點的藍 */
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+}
+
+.unlock-icon {
+    font-size: 1.2rem;
+}
+
+.unlock-label {
+    font-style: italic;
+}
+
+.unlock-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.unlock-btn {
+    background-color: rgba(178, 34, 34, 0.5); /* 半透明紅 */
+    color: #fff;
+    border: 1px solid rgba(178, 34, 34, 0.8); /* 紅色邊框 */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.4);
+    backdrop-filter: blur(3px);
+}
+
+    .unlock-btn:hover {
+        background: var(--accent-color);
+        color: #fff;
+        box-shadow: 0 0 15px var(--accent-color);
+    }
+
+.locked-content {
+    display: none;
+    animation: fadeIn 1s ease-in-out forwards;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 容器：極簡、機密感 */
+.secret-record.minimal {
+    background: #0b0d11;
+    border: 1px solid rgba(255,80,80,.28);
+    border-radius: 8px;
+    padding: 16px;
+    color: #e7ecf3;
+    margin: 20px 0;
+}
+
+.secret-header .secret-title {
+    color: #ff6666;
+    font-weight: 700;
+    letter-spacing: .4px;
+}
+
+/* 解鎖按鈕：半透明紅 */
+.unlock-container {
+    text-align: center;
+    margin: 8px 0 10px
+}
+
+.unlock-btn {
+    background: rgba(178,34,34,.35);
+    border: 1px solid rgba(178,34,34,.7);
+    color: #ffdede;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: .95rem;
+    cursor: pointer;
+    transition: .25s;
+}
+
+    .unlock-btn:hover {
+        background: rgba(178,34,34,.5)
+    }
+
+/* 內容與排版：只這塊好讀、行距舒適 */
+.secret-content {
+    display: none
+}
+
+    .secret-content.show {
+        display: block;
+        animation: fadeIn .45s ease
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.prose p {
+    margin: 0 0 1em;
+    line-height: 1.8
+}
+
+.prose .cue {
+    color: #a7b3c2;
+    font-style: italic
+}
+
+    .prose .cue.end {
+        margin-top: .25em
+    }
+
+.tag {
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .2px;
+    color: #ffb3b3;
+    margin-right: .4em;
+}
+
+    .tag.alt {
+        color: #a7d0ff
+    }
+
+/* 沙啞聲：淡左線＋斜體，輕量區分 */
+.interject {
+    border-left: 3px solid rgba(132,191,255,.35);
+    padding-left: .6em;
+    font-style: italic;
+    color: #dfeaff;
+    background: rgba(132,191,255,.06);
+    border-radius: 4px;
+}
+
+/* 報紙段落：低調經文感 */
+blockquote.gospel {
+    margin: 0 0 1em;
+    padding: .75em 1em;
+    background: rgba(255,255,255,.03);
+    border-left: 3px solid rgba(255,102,102,.55);
+    font-style: italic;
+    color: #f2dede;
+    border-radius: 4px;
+}
+
+/* 收束句式微強調 */
+.final {
+    border-left: 3px solid rgba(178, 34, 34, 0.5);
+    padding-left: .6em;
+    color: #ffffff;
+}
+
+/* 手機友好 */
+@media (max-width:600px) {
+    .unlock-btn {
+        width: 100%
+    }
+}
+
+
+
+.diary-entry p {
+    text-indent: 1em; /* 只這裡縮排兩字 */
+    margin-bottom: 1.4em; /* 段落間距也稍加大 */
+    line-height: 1.75; /* 行距舒適些 */
+    font-family: 'Courier New', Courier, 'Noto Sans Mono', monospace;
+
+}
+
+
+.section-divider {
+    border: none;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1); /* 淡淡的白線 */
+    margin: 3rem 0; /* 上下空間 */
+}
+
+
+
