@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Long Night</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Noto+Sans:wght@400;500;700&family=Inter:wght@300;400;500&display=swap">
+</head>
+<body class="gallery-page">
+    <div class="overlay"></div>
+    <div class="background-container">
+        <div class="bg-image"></div>
+        <div class="bg-fog"></div>
+    </div>
+    
+    <div class="page-navigation">
+        <a href="index.html" class="home-link">返回首页</a>
+    </div>
+    
+<div class="content-container">
+        <h1 class="section-title">Gallery</h1>
+        
+        <div class="gallery-controls">
+            <button class="view-toggle active" data-view="costume">服设一览</button>
+            <button class="view-toggle" data-view="concept-grid">概念艺术-网格</button>
+            <button class="view-toggle" data-view="concept-slideshow">概念艺术-幻灯片</button>
+        </div>
+        
+        <h2 class="subsection-title">服装设计</h2>
+        <p class="gallery-intro">在不同的场景和世界中，Noah和Laertes的形象也随之变化。以下是他们在各个平行世界中的服装设计，每一套都体现了他们的特质与所处环境的关系。</p>
+        
+        <div class="costume-container">
+            <div class="costume-grid">
+                <div class="costume-card" data-target="costume-modal-school">
+                    <h3>学园AU</h3>
+                    <img src="images/paro-school.png" alt="学园AU服装设计" class="costume-image">
+                    <div class="costume-description">
+                        <p>在学园AU中，Noah穿着整洁的校服，领带永远系得一丝不苟，象征着他严谨的性格。而Laertes则是叛逆的形象，校服外套随意披在肩上，衬衫扣子解开几颗，领带松散，展现出他不羁的个性。</p>
+                    </div>
+                </div>
+                
+                <div class="costume-card" data-target="costume-modal-space">
+                    <h3>星际AU</h3>
+                    <img src="images/paro-space.png" alt="星际AU服装设计" class="costume-image">
+                    <div class="costume-description">
+                        <p>星际AU中，Noah身着星际联邦科学官的制服，以白色和蓝色为主，线条简洁流畅，胸前佩戴着象征科学部门的徽章。Laertes则穿着由"星尘"材料制成的战斗服，呈现出半透明的深蓝色，随着他的情绪变化而改变色调。</p>
+                    </div>
+                </div>
+                
+                <div class="costume-card" data-target="costume-modal-myth">
+                    <h3>中式克鲁苏AU</h3>
+                    <img src="images/paro-myth.png" alt="中式克鲁苏AU服装设计" class="costume-image">
+                    <div class="costume-description">
+                        <p>在中式克鲁苏AU中，观莲使（Laertes）身着古代冥界神官的服饰，以黑色和暗红色为主，长袍上绣有莲花和骨纹图案，手持骨镜。照灵君（Noah）则穿着华丽的古代官服，以白色和金色为主，象征着他在人间的地位和权力。</p>
+                    </div>
+                </div>
+                
+                <div class="costume-card" data-target="costume-modal-city">
+                    <h3>现代都市AU</h3>
+                    <img src="images/paro-city.png" alt="现代都市AU服装设计" class="costume-image">
+                    <div class="costume-description">
+                        <p>现代都市AU中，Noah作为心理医生，通常穿着简约但高级的衬衫、西裤和羊毛开衫，偶尔会戴一副金丝边眼镜，展现出专业和温和的形象。Laertes则是艺术家的装扮，喜欢穿着颜色鲜艳的衬衫、破洞牛仔裤和涂鸦风格的外套，手上和脖子上有几处小纹身。</p>
+                    </div>
+                </div>
+                
+                <div class="costume-card" data-target="costume-modal-fantasy">
+                    <h3>奇幻世界AU</h3>
+                    <img src="images/paro-fantasy.png" alt="奇幻世界AU服装设计" class="costume-image">
+                    <div class="costume-description">
+                        <p>奇幻世界AU中，Noah作为圣光法师，穿着白色和金色相间的长袍，袍子上绣有光明符文，手持水晶法杖。Laertes作为魔染使者，则穿着深色的皮革装备，上面缠绕着紫色的魔染能量，形成独特的花纹，背后披着一件能随风飘动的斗篷。</p>
+                    </div>
+                </div>
+                
+                <div class="costume-card" data-target="costume-modal-cyber">
+                    <h3>赛博朋克AU</h3>
+                    <img src="images/paro-cyber.png" alt="赛博朋克AU服装设计" class="costume-image">
+                    <div class="costume-description">
+                        <p>赛博朋克AU中，Noah作为网络安全专家，穿着高科技的白色紧身战斗服，上面有发光的蓝色线条，手臂上安装有全息投影设备。Laertes作为黑客，则穿着黑色和紫色相间的高领外套，戴着特制的VR眼镜，身上有多处机械改造，能与数据直接交互。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="costume-slideshow">
+                <div class="slideshow-container">
+                    <div class="slide">
+                        <img src="images/paro-school.png" alt="学园AU服装设计">
+                        <div class="slide-caption">
+                            <h3>学园AU</h3>
+                            <p>在学园AU中，Noah穿着整洁的校服，领带永远系得一丝不苟，象征着他严谨的性格。而Laertes则是叛逆的形象，校服外套随意披在肩上，衬衫扣子解开几颗，领带松散，展现出他不羁的个性。</p>
+                            <button class="view-details" data-target="costume-modal-school">查看详情</button>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/paro-space.png" alt="星际AU服装设计">
+                        <div class="slide-caption">
+                            <h3>星际AU</h3>
+                            <p>星际AU中，Noah身着星际联邦科学官的制服，以白色和蓝色为主，线条简洁流畅，胸前佩戴着象征科学部门的徽章。Laertes则穿着由"星尘"材料制成的战斗服，呈现出半透明的深蓝色，随着他的情绪变化而改变色调。</p>
+                            <button class="view-details" data-target="costume-modal-space">查看详情</button>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/paro-myth.png" alt="中式克鲁苏AU服装设计">
+                        <div class="slide-caption">
+                            <h3>中式克鲁苏AU</h3>
+                            <p>在中式克鲁苏AU中，观莲使（Laertes）身着古代冥界神官的服饰，以黑色和暗红色为主，长袍上绣有莲花和骨纹图案，手持骨镜。照灵君（Noah）则穿着华丽的古代官服，以白色和金色为主，象征着他在人间的地位和权力。</p>
+                            <button class="view-details" data-target="costume-modal-myth">查看详情</button>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/paro-city.png" alt="现代都市AU服装设计">
+                        <div class="slide-caption">
+                            <h3>现代都市AU</h3>
+                            <p>现代都市AU中，Noah作为心理医生，通常穿着简约但高级的衬衫、西裤和羊毛开衫，偶尔会戴一副金丝边眼镜，展现出专业和温和的形象。Laertes则是艺术家的装扮，喜欢穿着颜色鲜艳的衬衫、破洞牛仔裤和涂鸦风格的外套，手上和脖子上有几处小纹身。</p>
+                            <button class="view-details" data-target="costume-modal-city">查看详情</button>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/paro-fantasy.png" alt="奇幻世界AU服装设计">
+                        <div class="slide-caption">
+                            <h3>奇幻世界AU</h3>
+                            <p>奇幻世界AU中，Noah作为圣光法师，穿着白色和金色相间的长袍，袍子上绣有光明符文，手持水晶法杖。Laertes作为魔染使者，则穿着深色的皮革装备，上面缠绕着紫色的魔染能量，形成独特的花纹，背后披着一件能随风飘动的斗篷。</p>
+                            <button class="view-details" data-target="costume-modal-fantasy">查看详情</button>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/paro-cyber.png" alt="赛博朋克AU服装设计">
+                        <div class="slide-caption">
+                            <h3>赛博朋克AU</h3>
+                            <p>赛博朋克AU中，Noah作为网络安全专家，穿着高科技的白色紧身战斗服，上面有发光的蓝色线条，手臂上安装有全息投影设备。Laertes作为黑客，则穿着黑色和紫色相间的高领外套，戴着特制的VR眼镜，身上有多处机械改造，能与数据直接交互。</p>
+                            <button class="view-details" data-target="costume-modal-cyber">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-nav">
+                    <button class="costume-prev">◄</button>
+                    <button class="costume-next">►</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery-container">
+            <h2 class="subsection-title">概念艺术</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery-1.png" alt="Noah在高污染区" class="gallery-image">
+                    <p class="gallery-caption">Noah在高污染区探索，身上的净化光环与周围的污染形成鲜明对比。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-2.png" alt="Laertes的变异形态" class="gallery-image">
+                    <p class="gallery-caption">Laertes的半变异形态，皮肤上的污染纹路发出微弱的光芒。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-3.png" alt="Noah与Laertes的初次相遇" class="gallery-image">
+                    <p class="gallery-caption">Noah与Laertes在"边界区"的初次相遇，两人的能力产生共鸣，创造出平衡区域。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-4.png" alt="伊甸园总部" class="gallery-image">
+                    <p class="gallery-caption">伊甸园总部"方舟"的外观，纯白的建筑漂浮在污染云层之上。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-5.png" alt="理想国总部" class="gallery-image">
+                    <p class="gallery-caption">理想国总部"新亚特兰蒂斯"，充满未来感的浮空城市，下方是浓重的污染云层。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-6.png" alt="全知之眼观测站" class="gallery-image">
+                    <p class="gallery-caption">全知之眼的一处观测站"视界"，位于污染与非污染区域的边界。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-7.png" alt="Noah的净化能力" class="gallery-image">
+                    <p class="gallery-caption">Noah释放净化能力的瞬间，周围的污染被驱散，形成一个纯净区域。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-8.png" alt="Laertes控制污染" class="gallery-image">
+                    <p class="gallery-caption">Laertes控制污染的场景，污染在他手中形成各种形状，如同艺术品。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-9.png" alt="Noah与Laertes的平衡状态" class="gallery-image">
+                    <p class="gallery-caption">Noah与Laertes共同创造的平衡状态，净化与污染交织，形成一种新的能量形式。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-10.png" alt="长夜之门" class="gallery-image">
+                    <p class="gallery-caption">传说中的"长夜之门"，据说只有当净化与污染达到完美平衡时才会开启。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-11.png" alt="普罗米修斯实验室废墟" class="gallery-image">
+                    <p class="gallery-caption">第一次污染事件的发源地"普罗米修斯实验室"的废墟，现在是高污染区。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-12.png" alt="Noah的记忆碎片" class="gallery-image">
+                    <p class="gallery-caption">Noah的一段记忆碎片，显示他在成为"圣子"之前的样子。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-13.png" alt="Laertes的实验记录" class="gallery-image">
+                    <p class="gallery-caption">理想国对Laertes进行改造的实验记录，记录了他如何成为"混沌使者"。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-14.png" alt="Noah与Laertes在高污染区" class="gallery-image">
+                    <p class="gallery-caption">Noah与Laertes在高污染区的探索，两人的能力互补，保护彼此免受污染的侵害。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-15.png" alt="Noah的污染人格" class="gallery-image">
+                    <p class="gallery-caption">Noah的"污染人格"显现，眼睛变为黑色，表情更加冷酷。</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery-16.png" alt="Laertes的人类一面" class="gallery-image">
+                    <p class="gallery-caption">Laertes罕见地展现出人类的一面，表情柔和，没有平时的狂放。</p>
+                </div>
+            </div>
+            
+            <div class="gallery-slideshow">
+                <div class="slideshow-container">
+                    <div class="slide">
+                        <img src="images/gallery-1.png" alt="Noah在高污染区">
+                        <div class="slide-caption">
+                            <h3>Noah在高污染区</h3>
+                            <p>Noah在高污染区探索，身上的净化光环与周围的污染形成鲜明对比。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-2.png" alt="Laertes的变异形态">
+                        <div class="slide-caption">
+                            <h3>Laertes的变异形态</h3>
+                            <p>Laertes的半变异形态，皮肤上的污染纹路发出微弱的光芒。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-3.png" alt="Noah与Laertes的初次相遇">
+                        <div class="slide-caption">
+                            <h3>Noah与Laertes的初次相遇</h3>
+                            <p>Noah与Laertes在"边界区"的初次相遇，两人的能力产生共鸣，创造出平衡区域。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-4.png" alt="伊甸园总部">
+                        <div class="slide-caption">
+                            <h3>伊甸园总部</h3>
+                            <p>伊甸园总部"方舟"的外观，纯白的建筑漂浮在污染云层之上。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-5.png" alt="理想国总部">
+                        <div class="slide-caption">
+                            <h3>理想国总部</h3>
+                            <p>理想国总部"新亚特兰蒂斯"，充满未来感的浮空城市，下方是浓重的污染云层。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-6.png" alt="全知之眼观测站">
+                        <div class="slide-caption">
+                            <h3>全知之眼观测站</h3>
+                            <p>全知之眼的一处观测站"视界"，位于污染与非污染区域的边界。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-7.png" alt="Noah的净化能力">
+                        <div class="slide-caption">
+                            <h3>Noah的净化能力</h3>
+                            <p>Noah释放净化能力的瞬间，周围的污染被驱散，形成一个纯净区域。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-8.png" alt="Laertes控制污染">
+                        <div class="slide-caption">
+                            <h3>Laertes控制污染</h3>
+                            <p>Laertes控制污染的场景，污染在他手中形成各种形状，如同艺术品。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-9.png" alt="Noah与Laertes的平衡状态">
+                        <div class="slide-caption">
+                            <h3>Noah与Laertes的平衡状态</h3>
+                            <p>Noah与Laertes共同创造的平衡状态，净化与污染交织，形成一种新的能量形式。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-10.png" alt="长夜之门">
+                        <div class="slide-caption">
+                            <h3>长夜之门</h3>
+                            <p>传说中的"长夜之门"，据说只有当净化与污染达到完美平衡时才会开启。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-11.png" alt="普罗米修斯实验室废墟">
+                        <div class="slide-caption">
+                            <h3>普罗米修斯实验室废墟</h3>
+                            <p>第一次污染事件的发源地"普罗米修斯实验室"的废墟，现在是高污染区。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-12.png" alt="Noah的记忆碎片">
+                        <div class="slide-caption">
+                            <h3>Noah的记忆碎片</h3>
+                            <p>Noah的一段记忆碎片，显示他在成为"圣子"之前的样子。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-13.png" alt="Laertes的实验记录">
+                        <div class="slide-caption">
+                            <h3>Laertes的实验记录</h3>
+                            <p>理想国对Laertes进行改造的实验记录，记录了他如何成为"混沌使者"。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-14.png" alt="Noah与Laertes在高污染区">
+                        <div class="slide-caption">
+                            <h3>Noah与Laertes在高污染区</h3>
+                            <p>Noah与Laertes在高污染区的探索，两人的能力互补，保护彼此免受污染的侵害。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-15.png" alt="Noah的污染人格">
+                        <div class="slide-caption">
+                            <h3>Noah的污染人格</h3>
+                            <p>Noah的"污染人格"显现，眼睛变为黑色，表情更加冷酷。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-16.png" alt="Laertes的人类一面">
+                        <div class="slide-caption">
+                            <h3>Laertes的人类一面</h3>
+                            <p>Laertes罕见地展现出人类的一面，表情柔和，没有平时的狂放。</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery-17.png" alt="Noah在高污染区">
+                        <div class="slide-caption">
+                            <h3>Noah在高污染区</h3>
+                            <p>Noah在高污染区探索，身上的净化光环与周围的污染形成鲜明对比。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-18.png" alt="Laertes的变异形态">
+                        <div class="slide-caption">
+                            <h3>Laertes的变异形态</h3>
+                            <p>Laertes的半变异形态，皮肤上的污染纹路发出微弱的光芒。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-19.png" alt="Noah与Laertes的初次相遇">
+                        <div class="slide-caption">
+                            <h3>Noah与Laertes的初次相遇</h3>
+                            <p>Noah与Laertes在"边界区"的初次相遇，两人的能力产生共鸣，创造出平衡区域。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-20.png" alt="伊甸园总部">
+                        <div class="slide-caption">
+                            <h3>伊甸园总部</h3>
+                            <p>伊甸园总部"方舟"的外观，纯白的建筑漂浮在污染云层之上。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-21.png" alt="理想国总部">
+                        <div class="slide-caption">
+                            <h3>理想国总部</h3>
+                            <p>理想国总部"新亚特兰蒂斯"，充满未来感的浮空城市，下方是浓重的污染云层。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-22.png" alt="全知之眼观测站">
+                        <div class="slide-caption">
+                            <h3>全知之眼观测站</h3>
+                            <p>全知之眼的一处观测站"视界"，位于污染与非污染区域的边界。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-23.png" alt="Noah的净化能力">
+                        <div class="slide-caption">
+                            <h3>Noah的净化能力</h3>
+                            <p>Noah释放净化能力的瞬间，周围的污染被驱散，形成一个纯净区域。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-24.png" alt="Laertes控制污染">
+                        <div class="slide-caption">
+                            <h3>Laertes控制污染</h3>
+                            <p>Laertes控制污染的场景，污染在他手中形成各种形状，如同艺术品。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-25.png" alt="Noah与Laertes的平衡状态">
+                        <div class="slide-caption">
+                            <h3>Noah与Laertes的平衡状态</h3>
+                            <p>Noah与Laertes共同创造的平衡状态，净化与污染交织，形成一种新的能量形式。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-26.png" alt="长夜之门">
+                        <div class="slide-caption">
+                            <h3>长夜之门</h3>
+                            <p>传说中的"长夜之门"，据说只有当净化与污染达到完美平衡时才会开启。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-27.png" alt="普罗米修斯实验室废墟">
+                        <div class="slide-caption">
+                            <h3>普罗米修斯实验室废墟</h3>
+                            <p>第一次污染事件的发源地"普罗米修斯实验室"的废墟，现在是高污染区。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-28.png" alt="Noah的记忆碎片">
+                        <div class="slide-caption">
+                            <h3>Noah的记忆碎片</h3>
+                            <p>Noah的一段记忆碎片，显示他在成为"圣子"之前的样子。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-29.png" alt="Laertes的实验记录">
+                        <div class="slide-caption">
+                            <h3>Laertes的实验记录</h3>
+                            <p>理想国对Laertes进行改造的实验记录，记录了他如何成为"混沌使者"。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-30.png" alt="Noah与Laertes在高污染区">
+                        <div class="slide-caption">
+                            <h3>Noah与Laertes在高污染区</h3>
+                            <p>Noah与Laertes在高污染区的探索，两人的能力互补，保护彼此免受污染的侵害。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-31.png" alt="Noah的污染人格">
+                        <div class="slide-caption">
+                            <h3>Noah的污染人格</h3>
+                            <p>Noah的"污染人格"显现，眼睛变为黑色，表情更加冷酷。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-32.png" alt="Laertes的人类一面">
+                        <div class="slide-caption">
+                            <h3>Laertes的人类一面</h3>
+                            <p>Laertes罕见地展现出人类的一面，表情柔和，没有平时的狂放。</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery-33.png" alt="Noah在高污染区">
+                        <div class="slide-caption">
+                            <h3>Noah在高污染区</h3>
+                            <p>Noah在高污染区探索，身上的净化光环与周围的污染形成鲜明对比。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-34.png" alt="Laertes的变异形态">
+                        <div class="slide-caption">
+                            <h3>Laertes的变异形态</h3>
+                            <p>Laertes的半变异形态，皮肤上的污染纹路发出微弱的光芒。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-35.png" alt="Noah与Laertes的初次相遇">
+                        <div class="slide-caption">
+                            <h3>Noah与Laertes的初次相遇</h3>
+                            <p>Noah与Laertes在"边界区"的初次相遇，两人的能力产生共鸣，创造出平衡区域。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-36.png" alt="伊甸园总部">
+                        <div class="slide-caption">
+                            <h3>伊甸园总部</h3>
+                            <p>伊甸园总部"方舟"的外观，纯白的建筑漂浮在污染云层之上。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-37.png" alt="理想国总部">
+                        <div class="slide-caption">
+                            <h3>理想国总部</h3>
+                            <p>理想国总部"新亚特兰蒂斯"，充满未来感的浮空城市，下方是浓重的污染云层。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-38.png" alt="全知之眼观测站">
+                        <div class="slide-caption">
+                            <h3>全知之眼观测站</h3>
+                            <p>全知之眼的一处观测站"视界"，位于污染与非污染区域的边界。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-39.png" alt="Noah的净化能力">
+                        <div class="slide-caption">
+                            <h3>Noah的净化能力</h3>
+                            <p>Noah释放净化能力的瞬间，周围的污染被驱散，形成一个纯净区域。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-40.png" alt="Laertes控制污染">
+                        <div class="slide-caption">
+                            <h3>Laertes控制污染</h3>
+                            <p>Laertes控制污染的场景，污染在他手中形成各种形状，如同艺术品。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-41.png" alt="Noah与Laertes的平衡状态">
+                        <div class="slide-caption">
+                            <h3>Noah与Laertes的平衡状态</h3>
+                            <p>Noah与Laertes共同创造的平衡状态，净化与污染交织，形成一种新的能量形式。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-42.png" alt="长夜之门">
+                        <div class="slide-caption">
+                            <h3>长夜之门</h3>
+                            <p>传说中的"长夜之门"，据说只有当净化与污染达到完美平衡时才会开启。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-43.png" alt="普罗米修斯实验室废墟">
+                        <div class="slide-caption">
+                            <h3>普罗米修斯实验室废墟</h3>
+                            <p>第一次污染事件的发源地"普罗米修斯实验室"的废墟，现在是高污染区。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-44.png" alt="Noah的记忆碎片">
+                        <div class="slide-caption">
+                            <h3>Noah的记忆碎片</h3>
+                            <p>Noah的一段记忆碎片，显示他在成为"圣子"之前的样子。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-45.png" alt="Laertes的实验记录">
+                        <div class="slide-caption">
+                            <h3>Laertes的实验记录</h3>
+                            <p>理想国对Laertes进行改造的实验记录，记录了他如何成为"混沌使者"。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-46.png" alt="Noah与Laertes在高污染区">
+                        <div class="slide-caption">
+                            <h3>Noah与Laertes在高污染区</h3>
+                            <p>Noah与Laertes在高污染区的探索，两人的能力互补，保护彼此免受污染的侵害。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-47.png" alt="Noah的污染人格">
+                        <div class="slide-caption">
+                            <h3>Noah的污染人格</h3>
+                            <p>Noah的"污染人格"显现，眼睛变为黑色，表情更加冷酷。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-48.png" alt="Laertes的人类一面">
+                        <div class="slide-caption">
+                            <h3>Laertes的人类一面</h3>
+                            <p>Laertes罕见地展现出人类的一面，表情柔和，没有平时的狂放。</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery-49.png" alt="Noah的污染人格">
+                        <div class="slide-caption">
+                            <h3>Noah的污染人格</h3>
+                            <p>Noah的"污染人格"显现，眼睛变为黑色，表情更加冷酷。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-50.png" alt="Laertes的人类一面">
+                        <div class="slide-caption">
+                            <h3>Laertes的人类一面</h3>
+                            <p>Laertes罕见地展现出人类的一面，表情柔和，没有平时的狂放。</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery-51.png" alt="Noah的污染人格">
+                        <div class="slide-caption">
+                            <h3>Noah的污染人格</h3>
+                            <p>Noah的"污染人格"显现，眼睛变为黑色，表情更加冷酷。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-52.png" alt="Laertes的人类一面">
+                        <div class="slide-caption">
+                            <h3>Laertes的人类一面</h3>
+                            <p>Laertes罕见地展现出人类的一面，表情柔和，没有平时的狂放。</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery-53.png" alt="Noah的污染人格">
+                        <div class="slide-caption">
+                            <h3>Noah的污染人格</h3>
+                            <p>Noah的"污染人格"显现，眼睛变为黑色，表情更加冷酷。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/gallery-54.png" alt="Laertes的人类一面">
+                        <div class="slide-caption">
+                            <h3>Laertes的人类一面</h3>
+                            <p>Laertes罕见地展现出人类的一面，表情柔和，没有平时的狂放。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-nav">
+                    <button class="slide-prev">◄</button>
+                    <button class="slide-next">►</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="js/main.js"></script>
+    
+    <!-- 服装设计模态框 -->
+    <div class="costume-modal" id="costume-modal-school">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>学园AU服装设计</h3>
+            <div class="costume-full-description">
+                <img src="images/paro-school.png" alt="学园AU服装设计" class="costume-full-image">
+                <h4>设计理念</h4>
+                <p>学园AU的服装设计以现代日本高中校服为基础，通过细节展现角色的个性差异。Noah和Laertes虽然穿着同样的校服，但穿着方式和搭配完全不同，反映了他们截然不同的性格。</p>
+                
+                <h4>Noah的服装</h4>
+                <p>Noah的校服永远保持整洁，黑色外套扣子全部扣好，白色衬衫领口平整，红色领带系得一丝不苟。他的校服总是熨烫得没有一丝褶皱，象征着他对规则的尊重和严谨的性格。</p>
+                <p>配饰方面，Noah佩戴一副简约的银框眼镜，手腕上有一块简单的黑色手表，用于精确计时。他的书包也是标准的黑色公文包式样，内部物品分类整齐。</p>
+                
+                <h4>Laertes的服装</h4>
+                <p>与Noah形成鲜明对比，Laertes的校服充满叛逆气息。黑色外套通常随意披在肩上或系在腰间，白色衬衫的扣子解开几颗，露出里面的黑色或深红色T恤。他的红色领带松松垮垮地挂在脖子上，有时甚至会用作头带。</p>
+                <p>Laertes的校服上有意做旧的痕迹和一些小破洞，衣袖和裤脚处有他自己画的小涂鸦。他的配饰包括几个耳钉、皮质手环和挂在裤子上的银色链条。他的书包是涂鸦风格的单肩包，常常塞满了画具。</p>
+                
+                <h4>色彩象征</h4>
+                <p>Noah的色调以黑白为主，偶尔点缀标准的红色领带，象征着他的中规中矩和内心的克制。</p>
+                <p>Laertes则在标准校服的基础上加入了深红色、紫色等个性化元素，象征着他内心的热情和艺术天赋。</p>
+                
+                <h4>季节变化</h4>
+                <p>春秋季节，两人穿着如上描述的标准校服。夏季时，Noah会穿着整洁的白色短袖衬衫和黑色长裤，依然保持领带；而Laertes则会将白色短袖衬衫的下摆扎出来，袖子卷起，领带可能会完全不见。冬季时，Noah会在校服外加一件深灰色的呢子大衣；Laertes则喜欢穿着带有艺术图案的深色连帽卫衣或皮夹克。</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="costume-modal" id="costume-modal-space">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>星际AU服装设计</h3>
+            <div class="costume-full-description">
+                <img src="images/paro-space.png" alt="星际AU服装设计" class="costume-full-image">
+                <h4>设计理念</h4>
+                <p>星际AU的服装设计融合了科幻元素和未来感，同时保留了角色的核心特质。设计灵感来源于经典科幻作品和现代太空服，但加入了"星尘"这一特殊元素，使服装具有独特的视觉效果和功能性。</p>
+                
+                <h4>Noah的服装</h4>
+                <p>作为星际联邦的科学官，Noah穿着官方制式的科学部门制服。主体是贴身的白色基础层，覆盖着蓝色的功能外层，线条流畅，设计简约但不失未来感。胸前佩戴着星际联邦科学部门的蓝色六边形徽章，内嵌微型计算机和通讯设备。</p>
+                <p>制服材料采用高科技纳米纤维，能够自动调节温度和压力，适应各种星球环境。袖口和领口处有发光的蓝色线条，显示着各种生命体征和环境数据。腰间配有多功能工具带，装有各种科学仪器和紧急医疗设备。</p>
+                
+                <h4>Laertes的服装</h4>
+                <p>作为被"星尘"改造的实验体，Laertes的服装更为独特和非传统。他穿着由"星尘"材料直接构成的半生物半机械的战斗服，呈现出半透明的深蓝色，内部有星尘能量流动的光芒，随着他的情绪和能量状态变化颜色。</p>
+                <p>这套装备没有明显的接缝或开口，看起来像是直接与他的皮肤融合。装备表面有不规则的几何图案，这些图案会随着能量流动而变化形状和亮度。背部延伸出类似翅膀的能量构造，使他能在太空中自由移动而无需额外的推进设备。</p>
+                
+                <h4>色彩象征</h4>
+                <p>Noah的制服以白色和蓝色为主，象征着科学的纯净和理性，以及他净化"星尘"的能力。</p>
+                <p>Laertes的装备则以深蓝色和紫色为基调，内部流动着多彩的星尘能量，象征着他与"星尘"的共生关系和内心的复杂性。</p>
+                
+                <h4>功能性设计</h4>
+                <p>Noah的制服注重实用性和科学功能，配有各种传感器和分析设备，能够检测和净化"星尘"污染。</p>
+                <p>Laertes的装备则更注重与"星尘"能量的互动，能够吸收、储存和释放能量，形成武器或防护罩。装备会根据环境和需求自动调整形态，提供最佳的保护和战斗能力。</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="costume-modal" id="costume-modal-myth">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>中式克鲁苏AU服装设计</h3>
+            <div class="costume-full-description">
+                <img src="images/paro-myth.png" alt="中式克鲁苏AU服装设计" class="costume-full-image">
+                <h4>设计理念</h4>
+                <p>中式克鲁苏AU的服装设计融合了中国古代神话元素和克苏鲁风格的超自然特质，创造出既有东方韵味又带有神秘恐怖气息的独特视觉效果。设计灵感来源于中国古代神话、道教服饰和克苏鲁神话中的非欧几里得几何美学。</p>
+                
+                <h4>观莲使（Laertes）的服装</h4>
+                <p>作为冥界神官，观莲使的服装以黑色和暗红色为主，长袍采用多层叠加的设计，外层是半透明的黑色丝绸，内层是深红色的织物，上面绣有莲花和骨纹图案。这些图案在特定的光线下会发出微弱的磷光，仿佛有生命一般流动。</p>
+                <p>他的头饰是一顶黑色高冠，上面镶嵌着骨质装饰，形状扭曲而不符合常规几何学。腰间悬挂着一串由特殊材质制成的骨片，每一片上都刻有不同的符文，用于各种冥界仪式。最重要的是他手中的骨镜，这是一面由神骨制成的镜子，边缘装饰着复杂的雕刻，能够照见生死两界。</p>
+                
+                <h4>照灵君（Noah）的服装</h4>
+                <p>作为人间的高官，照灵君的服装以白色和金色为主，展现出华贵和权威。他穿着精致的官服，外层是白色的长袍，上面绣有金线勾勒的云纹和光芒图案，象征着他照亮世界的使命。内层是淡金色的丝绸，质地轻盈如云。</p>
+                <p>他的头冠是金色的，形状如同光芒四射的太阳，上面镶嵌着各种宝石，每一颗都代表着他拯救的一个灵魂。腰间佩戴着一块玉佩，上面刻有"照灵"二字，是他身份的象征。他的靴子是白色的，但总是沾染着尘土，表明他经常行走在人间的各个角落。</p>
+                
+                <h4>色彩象征</h4>
+                <p>观莲使的黑色和暗红色象征着冥界的神秘和死亡的威严，同时也代表着他对生命的尊重和对灵魂的守护。</p>
+                <p>照灵君的白色和金色象征着光明和希望，代表着他照亮人世的使命，以及他作为救世主的神圣地位。</p>
+                
+                <h4>特殊元素</h4>
+                <p>两人的服装都融入了非欧几里得几何元素，某些图案和装饰看起来似乎违背了常规的空间法则，给人一种超越现实的感觉，这是克苏鲁风格的体现。同时，服装上的符文和图案也包含了中国古代道教和佛教的元素，创造出独特的东方神秘主义氛围。</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="costume-modal" id="costume-modal-city">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>现代都市AU服装设计</h3>
+            <div class="costume-full-description">
+                <img src="images/paro-city.png" alt="现代都市AU服装设计" class="costume-full-image">
+                <h4>设计理念</h4>
+                <p>现代都市AU的服装设计注重现实感和职业特性，同时通过细节和风格选择反映角色的性格和内心世界。设计灵感来源于当代专业人士的着装和艺术家的个性化表达，强调对比与互补。</p>
+                
+                <h4>Noah的服装</h4>
+                <p>作为一名心理医生，Noah的着装风格专业、内敛而高级。他通常穿着剪裁合身的衬衫，颜色以白色、浅蓝色和淡灰色为主，搭配深色西裤和棕色或黑色的皮鞋。在较为正式的场合，他会加上一件深色西装外套；而在日常工作中，则偏好质地柔软的羊毛开衫或针织衫。</p>
+                <p>他的配饰简约而精致，包括一副金丝边眼镜（虽然他视力正常，但这副眼镜帮助他在工作时保持专业形象），一块简约的银色手表，以及偶尔佩戴的深蓝色或灰色领带。他的发型永远整齐，通常是短发，梳理得一丝不苟。</p>
+                
+                <h4>Laertes的服装</h4>
+                <p>作为一名艺术家，Laertes的着装风格大胆、多变且充满个性。他喜欢穿着颜色鲜艳或图案独特的衬衫，通常不会完全扣上扣子，露出里面的T恤或背心。下装多为做旧或破洞的牛仔裤，有时会选择宽松的工装裤，上面沾有颜料的痕迹。他的外套风格多变，从皮夹克到涂鸦风格的牛仔外套，再到印有抽象图案的宽松卫衣。</p>
+                <p>他的配饰丰富而有艺术感，包括几个不同风格的耳钉，手腕上的皮质手环和彩色编织手绳，以及几枚独特的戒指。他的脖子和手臂上有几处小型纹身，每一个都有特殊的含义。他的发型通常是略显凌乱的中长发，有时会染成非自然的颜色，如深蓝或紫色的发尾。</p>
+                
+                <h4>色彩象征</h4>
+                <p>Noah的着装以冷色调和中性色为主，象征着他的理性、专业和内心的平静，同时也反映了他对情感的克制。</p>
+                <p>Laertes的着装则充满了暖色调和对比强烈的色彩，象征着他的热情、创造力和情感的丰富性，同时也反映了他内心的混沌与矛盾。</p>
+                
+                <h4>场合变化</h4>
+                <p>在不同的场合，两人的着装也会有所变化。Noah在正式场合会选择全套西装，而在私下放松时则会穿着简单的T恤和休闲裤，但依然保持整洁。Laertes在艺术展览上会稍微正式一些，选择设计师品牌的特色服装，而在创作时则会穿着随意到几乎邋遢的工作服，上面满是颜料和材料的痕迹。</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="costume-modal" id="costume-modal-fantasy">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>奇幻世界AU服装设计</h3>
+            <div class="costume-full-description">
+                <img src="images/paro-fantasy.png" alt="奇幻世界AU服装设计" class="costume-full-image">
+                <h4>设计理念</h4>
+                <p>奇幻世界AU的服装设计融合了西方奇幻元素和独特的魔法体系，通过服装展现角色的能力和身份。设计灵感来源于传统奇幻作品、中世纪服饰和元素魔法的视觉表现，强调魔法能量与物质形态的结合。</p>
+                
+                <h4>Noah的服装</h4>
+                <p>作为圣光法师，Noah的服装以白色和金色为主，展现出神圣和纯净的气质。他穿着一件长至脚踝的法师长袍，外层是纯白色的丝质面料，上面绣有金色的光明符文，这些符文在他施法时会发出柔和的光芒。内层是淡金色的织物，质地轻盈但坚韧。</p>
+                <p>长袍的领口、袖口和下摆都镶嵌着金色的边饰，上面刻有微小的魔法回路，能够增强他的净化能力。他的腰带是由特殊的魔法金属制成，上面挂着几个小型魔法水晶和药剂瓶。他手持一根水晶法杖，杖身是白色的魔法木材，顶端镶嵌着一颗大型的光明水晶，是他魔法力量的聚焦点。</p>
+                
+                <h4>Laertes的服装</h4>
+                <p>作为魔染使者，Laertes的服装以深色和紫色为主，展现出神秘和力量的气息。他穿着一套由特殊处理的黑色皮革制成的战斗装备，包括紧身的上衣、长裤和手套，提供良好的防护和灵活性。这些皮革上缠绕着紫色的魔染能量，形成独特的花纹和纹路，随着他的情绪和能量波动而变化。</p>
+                <p>他的肩膀和胸前有几块金属护甲，上面刻有能够控制魔染的符文。背后披着一件能随风飘动的深紫色斗篷，斗篷的边缘似乎在不断溶解和重组，展现出魔染的流动性。他没有使用传统的武器或法杖，而是直接通过手部的特殊纹身引导和塑造魔染能量。</p>
+                
+                <h4>色彩象征</h4>
+                <p>Noah的白色和金色象征着光明、纯净和秩序，代表着他净化魔染的能力和对平衡的追求。</p>
+                <p>Laertes的黑色和紫色象征着神秘、混沌和变革，代表着他对魔染的控制和对真相的探索。</p>
+                
+                <h4>魔法元素</h4>
+                <p>两人的服装都融入了魔法元素的视觉表现。Noah的服装上的符文和水晶展现了光元素的特性：明亮、规则和稳定。Laertes的服装上的魔染能量则展现了混沌元素的特性：流动、变化和适应。</p>
+                <p>在战斗或施法状态下，两人的服装会发生变化：Noah的长袍会散发出柔和的光芒，符文亮起，形成一个光之护盾；Laertes的魔染纹路会更加活跃，延伸出触手状的能量结构，可以作为武器或防护。</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="costume-modal" id="costume-modal-cyber">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>赛博朋克AU服装设计</h3>
+            <div class="costume-full-description">
+                <img src="images/paro-cyber.png" alt="赛博朋克AU服装设计" class="costume-full-image">
+                <h4>设计理念</h4>
+                <p>赛博朋克AU的服装设计融合了高科技元素和反乌托邦美学，通过服装展现未来社会的阶层分化和人机融合。设计灵感来源于经典赛博朋克作品、现代科技发展趋势和数字艺术，强调功能性与视觉冲击力的结合。</p>
+                
+                <h4>Noah的服装</h4>
+                <p>作为纯净公司的网络安全专家，Noah的服装代表了企业精英和高端科技。他穿着一套白色的紧身战斗服，采用纳米材料制成，能够根据环境调整温度和硬度，提供最佳的保护。战斗服上有发光的蓝色线条，这些线条实际上是数据流和能量回路的可视化，显示着系统状态和环境信息。</p>
+                <p>他的右手臂上安装有一个全息投影设备，可以随时调出各种界面和数据。左手腕上有一个多功能腕表，实际上是一个微型超级计算机，能够连接到神经网的各个节点。他的眼睛经过基因改造，能够直接看到数据流，并通过眨眼和视线移动来控制界面。在外出任务时，他会穿上一件白色的长风衣，内部嵌有防弹材料和隐形的武器系统。</p>
+                
+                <h4>Laertes的服装</h4>
+                <p>作为黑客和数据污染的控制者，Laertes的服装代表了地下文化和非主流科技。他穿着一件黑色和紫色相间的高领外套，材质看似普通皮革，实际上内置了多层防监控和信号干扰系统。外套上有不规则的发光图案，这些图案是他编写的特殊代码的可视化，能够干扰周围的电子设备。</p>
+                <p>他戴着一副特制的VR眼镜，镜片呈现出紫色的半透明状态，能够同时看到现实世界和数字世界的叠加。他的左臂有大面积的机械改造，外表是黑色金属，上面有多个接口和小型显示屏。这些改造使他能够直接与数据系统交互，甚至可以物理连接到各种设备。他的靴子内置了静音系统和短距离跳跃增强器，方便潜入和逃脱。</p>
+                
+                <h4>色彩象征</h4>
+                <p>Noah的白色和蓝色象征着企业文化、秩序和净化，代表着他在系统中的高级权限和对数据污染的清除能力。</p>
+                <p>Laertes的黑色和紫色象征着反抗、混沌和创新，代表着他作为黑客的身份和对数据污染的控制能力。</p>
+                
+                <h4>科技元素</h4>
+                <p>两人的服装都融入了大量的科技元素，但风格截然不同。Noah的科技是光滑、整洁和高效的，代表着主流科技的发展方向。Laertes的科技则是粗犷、拼凑和非常规的，代表着地下黑客文化的创新和反叛。</p>
+                <p>在连接到神经网时，两人的服装会发生变化：Noah的蓝色线条会更加明亮，形成一个数据护盾；Laertes的紫色图案会扩散开来，形成一个数据干扰场，使他能够隐藏在数字噪音中。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Paro页面专用样式 */
+.paro-card {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.paro-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 文本截断样式 */
+.paro-description {
+    position: relative;
+    max-height: 14em; /* 大约10行文本的高度 */
+    overflow: hidden;
+    line-height: 1.4em;
+}
+
+.paro-description::after {
+    content: '...点击查看更多';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3em;
+    padding: 1em 0.5em 0 0;
+    text-align: right;
+    background: linear-gradient(to bottom, transparent, rgba(20, 20, 30, 0.95) 40%);
+    color: #d4af37; /* 金色，更加醒目 */
+    font-size: 0.9em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* 展开状态 */
+.paro-card.expanded .paro-description {
+    max-height: none;
+}
+
+.paro-card.expanded .paro-description::after {
+    display: none;
+}
+
+/* 模态框样式 */
+.paro-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    overflow-y: auto;
+    animation: fadeIn 0.3s ease;
+}
+
+.paro-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: rgba(20, 20, 30, 0.95);
+    border: 1px solid #8b7355;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideUp 0.3s ease;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #8b7355;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #d4af37;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

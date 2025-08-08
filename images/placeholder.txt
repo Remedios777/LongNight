@@ -1,0 +1,17 @@
+这个文件夹用于存放网站所需的图片资源。
+
+需要添加以下图片：
+
+1. https://files.catbox.moe/7kael1.png - 网站背景图片，高污染区夜景或污染怪物轮廓
+2. fog.png - 雾气效果图片，用于背景动效
+3. noah-portrait.jpg - Noah的半身像
+4. laertes-portrait.jpg - Laertes的半身像
+5. noah-full.jpg - Noah的全身像
+6. laertes-full.jpg - Laertes的全身像
+7. paro-school.jpg - 学园AU的参考图
+8. paro-space.jpg - 星际AU的参考图
+9. paro-myth.jpg - 古代神话AU的参考图
+10. paro-city.jpg - 现代都市AU的参考图
+11. paro-fantasy.jpg - 奇幻世界AU的参考图
+12. paro-cyber.jpg - 赛博朋克AU的参考图
+13. gallery-1.jpg 到 gallery-16.jpg - Gallery页面的图片
