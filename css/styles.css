@@ -1528,6 +1528,10 @@ body {
     background-color: #3498db;
 }
 
+.level-3 {
+    background-color: #ddbf2b;
+}
+
 .level-4 {
     background-color: #e74c3c;
 }
@@ -1767,6 +1771,78 @@ blockquote.gospel {
     height: 2px;
     background: rgba(255, 255, 255, 0.1); /* 淡淡的白線 */
     margin: 3rem 0; /* 上下空間 */
+}
+
+/* 缺席紀錄：縱向簡表 */
+.absence-meta-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: .95rem;
+    color: #c7d3df;
+    background: rgba(255,255,255,0.03);
+    padding: 12px 14px;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 6px;
+}
+
+    .absence-meta-vertical strong {
+        color: #e9eef5;
+    }
+
+/* 分隔線 */
+.divider {
+    border: none;
+    border-top: 1px dashed rgba(255,255,255,0.08);
+    margin: 12px 0;
+}
+
+.doc-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
+    border: 1px solid rgba(236, 240, 241, 0.1);
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+.doc-content p {
+    margin-bottom: 0.8em;
+    text-indent: 1em;
+    line-height: 1.7;
+}
+
+/* IV（紅色）已有：.unlock-btn { ... } 保留即可 */
+
+/* III（黃色） */
+.unlock-btn.tier-3 {
+    background-color: rgba(255,191,0,0.25); /* 黃 */
+    border: 1px solid rgba(255,191,0,0.7);
+    color: #fff2b3;
+    box-shadow: 0 0 10px rgba(255,191,0,0.25);
+}
+
+    .unlock-btn.tier-3:hover {
+        background-color: rgba(255,191,0,0.35);
+    }
+
+/* 讓藍色提示條保持一致（你已有 .unlock-banner，無需改） */
+
+
+.secret-subtitle {
+    font-size: .85rem;
+    color: #a7b3c2;
+    margin-top: 2px;
+    font-style: italic;
+}
+
+.emphasis-dot {
+    text-emphasis: filled dot; /* 實心圓點 */
+    text-emphasis-position: over right; /* 點在文字上方（縱書時右側） */
+   
 }
 
 

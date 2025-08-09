@@ -36,18 +36,18 @@
                     <h3>Noah</h3>
 
                     <div class="info-block">
-                        <h4><span class="access-tag level-1">权限 I</span> 某位研究人员的观察日记</h4>
+                        <h4><span class="access-tag level-1">权限 I</span> 某位观测员的日记</h4>
                         <div class="diary-entry">
                             <p class="indent">  </p>
                             <p class="indent"> <em>"那真是一双漂亮极了的<span style="color: #84bfff;">蓝眼睛</span>。"</em></p>
                             <p class="indent"> 你第一次看见诺亚时暗暗感叹。</p>
                             <p class="indent"> 与大多数概念体不同，诺亚——「概念体·支配」看上去既美丽、温柔而又无害，他在举手投足间甚至带着股贵族才有的优雅感。你猜想，他生前或许拥有着一个赫赫有名的姓氏。</p>
-                            <p class="indent"> 诺亚并不排斥每日来你那儿做些繁琐无味的心理测试，他总是会提前十五分钟就来到约定地点。而在谈话期间，你发现他很轻易就能掌握整场对话的主导权——你不知道这是否也是「支配」这个概念所赐予他的能力，作为研究所的基层人员，你无权查看记载了概念体能力的档案——但总之，你不是太能摸得清楚他内心深处的想法。</p>
-                            <p class="indent"> 而比起心理测试，他在体能测试上的表现则逊色许多。诺亚似乎并不擅长运动，体能数据在正常人里都属于中等偏下。</p>
-                            <p class="indent"> 不过在其后的魔力测试，他很快又扳回了一城——要论到使用魔法，他是在整个理想国中都难得一见的天才。</p>
+                            <p class="indent"> 诺亚并不排斥每日来你那儿做些繁琐无味的测试，他总是会提前十五分钟就来到约定地点，然后对着踩点到达的你裝作自己也才来不久。在谈话期间，你发现他很轻易就能掌握整场对话的主导权——你不知道这是否也是「支配」这个概念所赐予他的能力，作为研究所的基层人员，你无权查看记载了概念体能力的档案——但总之，你不是太能摸得清楚他内心深处的想法。</p>
+                            <p class="indent"> 而比起內在的能力，他在体能上的表现则逊色许多。诺亚似乎并不擅长运动，体能数据在正常人里属于中等偏下的水平。</p>
+                            <p class="indent"> 不过在其后的魔力测试中，他很快又扳回了一城——要论到使用魔法，魔力为S级的他是在整个理想国中都难得一见的天才。</p>
                             <p class="indent"> 值得一提的是，即使还处在失忆状态，但诺亚的神学知识仍然渊博。他几乎精通了每一个宗教典故，且对圣经中的内容都能提出极富哲学性的思辩……</p>
                             <p class="indent"><span style="color: #888888;">（日记中部分冗余内容已被略去）</span></p>
-                            <p class="indent"> 举止高贵、精通神学，而且擅于使用魔法——</p>
+                            <p class="indent"> 一个举止高贵、精通神学，而且又擅于使用魔法的人——</p>
                             <p class="indent"> 这并不是个太难得出的结论。<strong>你认为，概念体·支配生前应该属于伊甸园中的某个古老贵族世家。</strong></p>
                         </div>
                     </div>
@@ -100,8 +100,8 @@
                                 <p> 不，您请放心就好，我不会觉得不耐烦的。相反，能和您一起完成您理想中的实验，我感到很荣幸。"</p>
                             </div>
                             <div class="quote">
-                                "或许是因为有那个人在身边吧……我现在慢慢觉得，哪怕再也找不回以前的记忆，好像也没有关係了。
-                                <p> 只要有他在，我肯定就已经是这个世界上最幸福的人。"</p>
+                                "或许是因为有那个人在身边……我慢慢觉得，哪怕再也找不回以前的记忆，好像也没有关係了。
+                                <p> (轻笑声) 只要有他在，我肯定就已经是这个世界上最幸福的人。"</p>
                             </div>
                             <div class="quote-nav">
                                 <span class="quote-dot active"></span>
@@ -119,11 +119,11 @@
                     </div>
                     <!-- 🔐 权限IV解锁按钮 -->
                     <div class="unlock-container">
-                        <button class="unlock-btn" onclick="unlockContent()">🔒 点击以解锁</button>
+                        <button class="unlock-btn tier-4" onclick="unlockContent(this)">🔒 点击以解锁</button>
                     </div>
 
                     <!-- 🗂️ 权限IV内容（预设隐藏） -->
-                    <div class="locked-content" id="lockedContent">
+                    <div class="locked-content" id="lockedContentIV">
                         <div class="unlock-banner">
                             <span class="unlock-icon">🔓</span>您已通过IV级验证 · 解锁完成
                         </div>
@@ -131,39 +131,39 @@
                             <h4>档案 「N-0417-DOMINANCE」</h4>
                             <p><strong>安保等级：</strong> IV / 仅供内部人员阅览</p>
                             <p><strong>提交部门：</strong> 理想国第一研究中心・概念实体化部门</p>
-                            <p><strong>记录时间：</strong> ◾ ◾/◾ ◾/长夜纪元◾ ◾ ◾年</p>
+                            <p><strong>记录时间：</strong> ■ ■/■ ■/长夜纪元■ ■ ■年</p>
                             <p><strong>记录对象：</strong> 诺亚</p>
 
                             <p class="subhead">【纪录摘要】</p>
                             <p class="indent">对象为概念「支配」的第二任继任者。</p>
-                            <p class="indent">其最初被发现于区荒芜地带，由概念体・欢愉将其引渡至理想国。和所有概念体一样,概念体・支配也失去了生前的所有记忆，暂时未调查清其生前身分，但似乎不是理想国的国民。</p>
-                            <p class="indent">经观测，对象展现出与概念「支配」的高度共鸣，后者赋予了前者于心灵层面上的特殊能力。</p>
+                            <p class="indent">其最初被发现于荒芜地带，由概念体・欢愉将其引渡至理想国。和所有概念体一样，概念体・支配也失去了生前的所有记忆，暂时未查清其过去身分，但似乎並非已登记的理想国国民。</p>
+                            <p class="indent">经过数月以来的观测，可知概念「支配」赋予了对象于心灵层面上的特殊能力。</p>
                             <p class="indent">观测人员暂时将对象能力列为三个阶段。</p>
                             <p class="indent">其第一阶段能力表现为：<strong>感知周遭个体之情绪色彩</strong>，具有高精度之色彩-情绪对应（情绪光谱参见附录A）。</p>
-                            <p class="indent">在进入第二阶段，也就是现在，对象展现出<strong>「读取思维片段」</strong>的能力，并能判断其真实性与动机倾向。</p>
-                            <p class="indent">而根据对上一任继任者的记录及对对象的最近一次测试（记录编号：N-T314 -DOMINANCE），推断其能力的第三阶段大概率为<strong>「精神操控」</strong>。</p>
+                            <p class="indent">在进入第二阶段，也就是现在，对象展现出<strong>「读心」</strong>的能力，并能判断其中的真实性与动机倾向。</p>
+                            <p class="indent">而根据对上一任继任者的记录及对对象的最近一次例行测试（记录编号：N-T314 -DOMINANCE），推断其能力的第三阶段大概率为<strong>「精神操控」</strong>。</p>
 
                             <hr>
 
-                            <p class="stage-title">◇ 阶段 I：感知 · 情绪光谱观察</p>
-                            <p class="indent">诺亚能够「看见」他人情绪的颜色。</p>
-                            <p class="indent">这种颜色无法以光谱解释，更接近心灵投影的某种色尘或幻光。情绪越强烈，颜色越鲜明且具动态。</p>
-                            <p class="indent"><em>（例：恐惧为深紫色烟雾、爱意如金色水波）</em></p>
-                            <p class="indent">此能力属被动感知，无法自由控制是否启动。</p>
+                            <p class="stage-title">◇ 阶段 I：观察 · 情绪光谱</p>
+                            <p class="indent">对象能够「看见」他人情绪的颜色。</p>
+                            <p class="indent">这种颜色无法以光谱解释，也无法通过任何已知的方式观测到，近似于只有对象一人能看见的幻觉。</p>
+                            <p class="indent">据对象反馈，每一种情绪都有特定的代表色，每当这股情绪越强烈，呈现的颜色通常越鲜明。</p>
+                            <p class="indent"><em>（例：恐惧为紫色、爱意则为红色）</em></p>
 
                             <hr>
 
-                            <p class="stage-title">◇ 阶段 II：共感 · 心灵读取</p>
-                            <p class="indent">诺亚开始能「捕捉」人们心中正在闪现的字句，尤其是情绪强烈或与他有关的思维。</p>
-                            <p class="indent">对象的真实意图、谎言、害怕的画面、潜在欲望将会被他「看见」。</p>
-                            <p class="indent">这一阶段开始具备微弱的「干涉」倾向——只要诺亚愿意，他可以说出对方心中尚未说出口的话。</p>
+                            <p class="stage-title">◇ 阶段 II：感知 · 读心</p>
+                            <p class="indent">对象开始能「读取」到人们心中正在闪现的字句，尤其是情绪强烈或与他有关的思维。</p>
+                            <p class="indent">他人的真实意图、谎言、害怕的画面与潜在欲望都有概率会被对象「看见」。</p>
+                            <p class="indent">于这一阶段，对象开始具备微弱的「干涉」倾向——只要他愿意，他可以通过长时间的心理暗示来左右他人一些无关轻重的行为。</p>
 
                             <hr>
 
                             <p class="stage-title">◇ 阶段 III：支配 · 精神操纵（推测）</p>
-                            <p class="indent">诺亚未来的能力或许不再只是读取，而是「塑形」。</p>
+                            <p class="indent">对象未来的能力或许不再只是感知，而是「支配」。</p>
                             <p class="indent">他能引导他人的情绪朝某个方向发展，亦能透过语言、触碰甚至纯粹的「注视」而短暂地操纵对方做出指定行为。</p>
-                            <p class="indent emphasis">该类能力潜力极高，且于部门中未有先例，建议将诺亚列为重点关注对象。</p>
+                            <p class="indent emphasis">该类能力潜力极高，且于部门中未有先例，建议将其列为重点关注对象。</p>
                         </div>
                     </div>
 
@@ -183,7 +183,7 @@
 
                             <p><span class="tag">主任：</span>你有听说过五年前，发生在伊甸园圣城——梵帝岗的那场灭门惨案吗？</p>
 
-                            <p>是的，是的，我知道，梵帝岗天天都有人死。那帮信教的疯子一向以折磨自己人为乐……但我说的这一场不一样。被抹去的，是「赫尔辛基」家族——一个历史悠久、德高望重的教权贵族。</p>
+                            <p>是的，是的，我知道，梵帝岗天天都有人死。那帮信教的疯子一向以折磨自己人为乐……但我说的这一场不一样，被抹去的是「赫尔辛基」家族——一个历史悠久、德高望重的教权贵族。</p>
 
                             <p><span class="tag">主任：</span>你知道他们为什麽被灭门吗？</p>
 
@@ -198,7 +198,7 @@
                                 赫尔辛基家末子，蒙主拣选，承圣子之位，将于成年礼中领受祝圣。然其兄长因心魔滋长、弑弟灭恩。教皇闻之震怒，遣圣审司调查，查得赫尔辛基家血脉早染恶魔之汙，遂依教律施以淨化，全族归于圣火。
                             </blockquote>
 
-                            <p>……我真他妈讨厌伊甸园的教皇。这老混球要是没出生，现在的世界也不至于这麽乌烟瘴气。但我也不得不承认，他真是个玩政治的天才——你看，他在报纸上扯的这些话敷衍得像是来骗白痴的。可他的信徒比白痴还好糊弄，一个百年世家的灭亡就这麽被揭过去了。</p>
+                            <p>……我真他妈讨厌伊甸园的教皇。这老混球要是没出生，现在的世界也不至于这麽乌烟瘴气。但我也不得不承认，他真是个玩政治的天才——你看，他在报纸上扯的这些话敷衍得像是来骗白痴的。可他的信徒比白痴还好糊弄，对一个百年世家的屠杀就这麽轻易地被揭过去了。</p>
 
                             <p><span class="tag">主任：</span>你想知道真相吗？</p>
 
@@ -212,13 +212,13 @@
 
                             <p><span class="tag">主任：</span>……哦？</p>
 
-                            <p>你竟然对「圣骨」这字眼有反应……</p>
+                            <p>你竟然对「圣骨」这字眼有反应。</p>
 
                             <p>你听说过？</p>
 
                             <p>无论如何，我都不会在这里告诉你它的本质，你还没有权限知道这些。但我唯一可以告诉你的，就是它的价值要远远高于伊甸园所拥有过的任何东西——是的，你没听错，任何东西。</p>
 
-                            <p><span class="tag">主任：</span>重新说回那位大胆的圣子吧。教皇当然不可能会放过这种叛徒，那个圣子当场就被刺死了，连带着赫尔辛基全族也被怀疑有叛教之心，一并被清理掉，于是，你就能在报纸上看见这桩灭门惨案——</p>
+                            <p><span class="tag">主任：</span>重新说回那位大胆的圣子吧。教皇当然不可能会放过这种叛徒，那个圣子当场就被刺死，连带着赫尔辛基全族也被怀疑有叛教之心，一并被清理掉，于是，你就能在报纸上看见这桩灭门惨案——</p>
 
                             <p class="interject"><span class="tag alt">沙哑声：</span>那位圣子，他还活着。</p>
 
@@ -226,19 +226,21 @@
 
                             <p class="interject"><span class="tag alt">沙哑声：</span>全知之眼救了他。</p>
 
-                            <p><span class="tag">主任：</span>你也猜出来了？</p>
+                            <p><span class="tag">主任：</span>你猜出来了？</p>
 
-                            <p>是的，但这一点……却是我一直以来，最最想不通的地方。</p>
+                            <p>是的。</p>
+
+                            <p>但这一点……却是我一直以来，最最想不通的地方。</p>
 
                             <p>那个圣子明明已经是发挥完作用的弃子，可全知之眼并没有放弃他。他们冒了极大的风险救下他，甚至差点儿就全军复没。</p>
 
                             <p>我不可能用「善良」这种幼稚的理由去解释，知恩图报、有良心——这些都不成立。我只相信等价交换。</p>
 
-                            <p>所以，我想知道，那个圣子身上到底有什麽，值得全知之眼一次又一次，甚至不惜复灭去保护他。</p>
+                            <p>所以我想知道那个圣子身上到底有什麽，值得全知之眼一次又一次，甚至不惜复灭去保护他。</p>
 
                             <p><span class="tag">主任：</span>……说到这里，我好像还没跟你提过他的名字。</p>
-                            
-                            <p>虽然不用我说，你也肯定猜到了。</p>
+
+                            <p>虽然不用我说，你肯定也已经猜到了。</p>
 
                             <p class="final"><strong>那个圣子的名字，就叫作<span style="color: #e74c3c;">诺亚</span>。</strong></p>
 
@@ -247,7 +249,7 @@
                     </div>
 
                 </div>
-                </div>
+            </div>
 
             <div class="character-profile" data-character="laertes">
                 <div class="character-image-container">
@@ -258,33 +260,66 @@
                     <h3>Laertes</h3>
 
                     <div class="info-block">
-                        <h4>简介</h4>
-                        <p>隶属于理想国的研究中心，是「概念实体化」部门的一员，能力是召唤触手。生前似乎遭遇过不太好的对待，但在成为概念体后也失忆了，仅在偶尔会做起相关的梦。模糊地记得自己曾有过一个妹妹。因说话难听而在部门里人缘欠佳，不过本性並不坏，只是不能夠理解正常人的想法与感受——在他眼里就是自己常常说着说着话别人就不知怎么生起气来了。看着很像是个有脑子的角色，不过不是。过去没有上过学，太难的字会看不懂，社会化程度很低，太复杂的事情也想不懂。在一次任务期间捡到了同为概念体的诺亚，渐渐就和对方发展出亲密关系。因为诺亚对自己很好，而且长得像女孩，所以很喜欢。打算在诺亚对这段关系感到厌倦前都一直待在对方身边。</p>
+                        <h4>
+                            <span class="access-tag level-1">权限 I</span>
+                            缺席记录
+                        </h4>
+
+                        <!-- 简表部分（打竪） -->
+                        <div class="absence-meta-vertical">
+                            <div><strong>测试对象：</strong>雷尔提斯</div>
+                            <div><strong>观测员：</strong>R</div>
+                            <div><strong>备註：</strong>第五次缺席例行测试</div>
+                        </div>
+
+                        <hr class="divider">
+
+
+                        <!-- 叙事部分 -->
+                        <div class="diary-entry">
+                            <p>他今天也没有来。</p>
+                            <p>研究员 R 在表单上敲下<em><span style="color: #84bfff;">「缺席」</span></em>二字，随即松了一口气地关掉屏幕。</p>
+                            <p>按照规程，他此刻本应要在终端里发送消息提醒，去向该概念体说明缺席的后果，甚至亲自登门拜访——但他都没有做。</p>
+                            <p>更准确地说，<strong>他不太敢这麽做。</strong></p>
+                            <p>这并非 R 太胆小，而是整个部门的人都一致认为，<strong>概念体·欢愉有些可怕。</strong></p>
+                            <p>个中原因并不在于外貌上，他既没有三头六臂，也没有青面獠牙，只是全身上下总爱穿得一片漆黑——然而只要与他同处一室，别人总会莫名感到胸口发紧，呼吸变得沉重，好像有一块铅正默不作声地压在心头。</p>
+                            <p>据说魔力等级越高的人越能抵抗这种压迫感，比如某位 C 级魔力的同事在他面前依旧能对答如常，而 R——很不幸地——只是个魔力近乎枯竭的 E 级。每当例行测试结束，他走出测试间时腿肚子都还在发抖。</p>
+                            <p>因此，对 R 而言，缺席便意味着一次难得的喘息。</p>
+                            <p>哪怕要为此被上司责备怠职，他也认为可以接受。</p>
+                            <p>等再过两天他就终于能从这项任务中解脱了，到时候将会有另一位观测员接手这份差事——R 衷心祝愿那位后来者好运。</p>
+                        </div>
                     </div>
 
-                    <div class="info-block">
-                        <h4>基本信息</h4>
-                        <ul class="character-details">
-                            <li><strong>年龄：</strong>23岁</li>
-                            <li><strong>种族：</strong>魅魔（半人类改造体）</li>
-                            <li><strong>性别：</strong>男</li>
-                            <li><strong>特殊身分：</strong>适应者、混沌使者</li>
-                            <li><strong>所属势力：</strong>边界区自由联盟</li>
-                        </ul>
-                    </div>
+                    <hr class="section-divider">
 
                     <div class="info-block">
-                        <h4>概念体类型</h4>
-                        <p>欢愉</p>
+                        <h4><span class="access-tag level-2">权限 II</span> 基本信息</h4>
+                        <div class="unlock-banner">
+                            <span class="unlock-icon">🔓</span>
+                            <span class="unlock-label">您已通过II级验证 · 解锁完成</span>
+                        </div>
+                        <div class="locked-section" id="infoII">
+                            <ul class="character-details">
+                                <li><strong>姓名：</strong>雷尔提斯</li>
+                                <li><strong>年龄：</strong>22岁<span class="subtle-note">（生前）</span></li>
+                                <li><strong>种族：</strong>魅魔</li>
+                                <li><strong>性别：</strong>男</li>
+                                <li><strong>职业：</strong>刺客</li>
+                                <li><strong>特殊身份：</strong>概念体・欢愉</li>
+                                <li><strong>所属势力：</strong>理想国</li>
+                            </ul>
+                        </div>
                     </div>
+
                     <div class="info-block">
                         <h4>关键词</h4>
                         <div class="keywords">
-                            <span class="keyword">直白</span>
-                            <span class="keyword">情商低</span>
-                            <span class="keyword">喜欢睡觉</span>
-                            <span class="keyword">不通人性的小动物</span>
-                            <span class="keyword">Concept of euphoria</span>
+                            <span class="keyword">令人畏惧</span>
+                            <span class="keyword">直率</span>
+                            <span class="keyword">战斗力高</span>
+                            <span class="keyword">不通人性</span>
+                            <span class="keyword">社会化程度低</span>
+                            <span class="keyword">善良</span>
                         </div>
                     </div>
 
@@ -292,19 +327,22 @@
                         <h4>语录</h4>
                         <div class="quote-slider">
                             <div class="quote active">
-                                "规则是用来打破的，现实是用来重塑的。"
+                                "我的名字是什么…？文件上不就写着了吗。"
                             </div>
                             <div class="quote">
-                                "你们称之为污染的东西，对我来说是艺术的颜料。"
+                                "睡过头了，所以没来参加测试——
+                                <p>哦，那个不能当缺席理由吗，真麻烦。"</p>
                             </div>
                             <div class="quote">
-                                "我不是怪物，我只是提前看到了人类的未来形态。"
+                                "…给回你。
+                                <p> 嗯，是特等赏。</p>
+                                <p>我运气一向不错，至于为什么乱拆你的盲盒……只是看见了有东西放在面前就会很想拆开。"</p>
                             </div>
                             <div class="quote">
-                                "在长夜中迷失？不，我是在长夜中找到了自己。"
+                                "我没有迷路，是诺亚让我在这里等他。"
                             </div>
                             <div class="quote">
-                                "Noah，你想净化世界，而我想解放世界。也许我们的目标其实是一样的。"
+                                "喜欢……我不太了解那是什么，我只是想跟他待在一起。"
                             </div>
                             <div class="quote-nav">
                                 <span class="quote-dot active"></span>
@@ -316,12 +354,162 @@
                         </div>
                     </div>
 
+                    <hr class="section-divider">
+
+                    <!-- 权限 II 解锁文档 -->
                     <div class="info-block">
-                        <h4>背景</h4>
-                        <p>Laertes表面轻浮不羁，实则心思缜密。他对世界的认知超越常人，能够看到污染背后的本质。作为"混沌使者"，他能够引导污染的流向，创造出奇异的现象。</p>
-                        <p>Laertes曾是理想国的实验体，被改造为"适应者"。这段经历给他留下了心理阴影，使他对任何形式的束缚都极度抗拒。</p>
-                        <p>在低污染区域，Laertes会感到不适，甚至痛苦。他需要定期接触高污染区域来维持自己的状态，这使他不得不在污染与非污染区域之间游走。</p>
-                        <p>尽管外表不羁，Laertes对Noah有着特殊的情感，既是对立面，又是互补体。他们的相遇被认为是长夜中的必然。</p>
+                        <h4><span class="access-tag level-2">权限 II</span> 对概念体・■的访谈记录</h4>
+                        <div class="unlock-banner">
+                            <span class="unlock-icon">🔓</span>
+                            <span class="unlock-label">您已通过II级验证 · 解锁完成</span>
+                        </div>
+
+                        <!-- 简表部分：直列式 -->
+                        <div class="doc-meta">
+                            <div><strong>主题：</strong>关于下次任务派遣的访谈</div>
+                            <div><strong>访谈对象：</strong>概念体・■ </div>
+                            <div><strong>备注：</strong>仅供 II 级以上内部人员阅览</div>
+                        </div>
+
+                        <!-- 正文 -->
+                        <div class="doc-content">
+                            <p>不，我不会再跟雷尔提斯一起组队。</p>
+
+                            <p>……我怕他？</p>
+
+                            <p>哈，你可别小瞧了我。</p>
+
+                            <p>那家伙身上的「异世气息」可不算重，魔力到了 B 级的人基本都能免疫，更何况是我？怕当然是不会怕，我只是——不太想。</p>
+
+                            <p>他太过我行我素了。</p>
+
+                            <p>明明进副本前大家一起讨论战术，他安安静静地看着你，好像都听进去了；可一开打，他就完全不理会你之前有什么计划，想怎么冲就怎么冲。</p>
+
+                            <p>——偏偏还真给他打赢了，你说气人不气人？</p>
+
+                            <p>另外……我都不知道该怎么形容。唉，但我可能跟他就是三观不合吧。</p>
+
+                            <p>上次我们一起去荒芜地带里攻略 A 级副本「万象之城」，这事我没写在报告里——他在副本里遇到一个误闯的拾荒者，确定不是副本生物后，居然说要带上对方一起走。</p>
+
+                            <p>你也愣住了吧？这听起来活像哪本童话书里的情节，天真得都不像话了。</p>
+
+                            <p>虽然这字眼看着和他很不搭，但雷尔提斯就是个很天真的人。</p>
+
+                            <p>你问那个拾荒者的后续……？那当然是死在里边了，要带着个拖油通关 A 级副本可真够荒谬，我们自己能活着出去就已经是侥幸。</p>
+
+                            <p>雷尔提斯当时还受了不轻的伤，不过，那都是他自己的选择。</p>
+
+                            <p>荒芜地带从来都不是一个适合用来证明善心的地方，在末日里，不吃人就已经算得上高尚，而想再往上做……就得先掂量自己有没有那个本事。</p>
+
+                            <p>说了这么多，我只是想让你明白我拒绝和他再组队的理由。</p>
+
+                            <p>我并不讨厌他，也并非是在意气用事，只是不放心将后背交给他——我还想再多活几年。</p>
+                        </div>
+
+                        <hr class="section-divider">
+
+                        <div class="info-block">
+                            <h4><span class="access-tag level-3">权限 III</span> <span style="color:#ddbf2b;">记录已封存 · 仅限III级以上人员可查看</span></h4>
+                        </div>
+
+                        <!-- 🔐 权限III解锁按钮（黃色） -->
+                        <div class="unlock-container">
+                            <button class="unlock-btn tier-3" onclick="unlockContentById('lockedContentIII', this)">🔒 点击以解锁</button>
+                        </div>
+
+                        <!-- 🗂️ 权限III内容（预设隐藏） -->
+                        <div class="locked-content" id="lockedContentIII">
+                            <div class="unlock-banner">
+                                <span class="unlock-icon">🔓</span>您已通过III级验证 · 解锁完成
+                            </div>
+
+                            <!-- 這裡放你的能力檔全文（已套入） -->
+                            <div class="info-block">
+                                <h4>文档 「L-0144-EUPHORIA」</h4>
+                                <p><strong>安保等级：</strong> III / 仅供内部人员阅览</p>
+                                <p><strong>文档编号：</strong> L-0144-EUPHORIA</p>
+                                <p><strong>提交部门：</strong> 理想国第一研究中心・概念实体化部门</p>
+                                <p><strong>记录时间：</strong> ■ ■/■ ■/长夜纪元■ ■ ■年</p>
+                                <p><strong>记录对象：</strong> 雷尔提斯</p>
+
+                                <p class="subhead">【纪录摘要】</p>
+                                <p class="indent">对象为概念「欢愉」的第三任继任者，并被赋予了罕见的召唤能力。</p>
+                                <p class="indent">对象将异世生物召唤入现实的方式目前尚无可验证的理论解释。经观测显示，虽然对象偶尔能召唤其他类型的异世生物，但在大多数情况下，召唤结果固定为与其缔结过契约的触手型生物（部门代号 <strong>T-05</strong>）。</p>
+                                <p class="indent"><strong>T-05</strong> 与对象之间存在高度稳定的心灵链接，可精确接收战术指令与情感信号，并具备感官共享能力。在近距离作战中，该生物展现出极高的反应速度与力量，能灵活用于攻击、运输、拘束、攀爬及防御。</p>
+                                <p class="indent">推测对象对 <strong>T-05</strong> 的控制并非单向命令，而是基于高度默契来运作的「双向共生」关系。</p>
+                                <p class="indent soft">（关于对象曾召唤的其他异世生物，详见测试记录 <em>L-B379-EUPHORIA</em>；该档案于 ■ ■/■ ■/长夜纪元■ ■ ■年后已升级为 V 级权限。）</p>
+
+                                <hr>
+
+                                <p class="stage-title">【副作用】</p>
+                                <p class="indent">与异世接触产生的残留气息会在对象周围形成难以量化的心理压力场。当低魔力个体（魔力为 <strong>B 级以下</strong>）接近时，常出现心跳加快、呼吸急促、颈项发凉、注意力涣散等症状；而即便是魔力为 <strong>A 级</strong>的观测员在长时间近距观测中，也会有小概率出现类似于轻度恐惧或不安等反应。</p>
+                                <p class="indent">据目前观测，这种现象并非对象刻意为之，而是源于其与异世生物维持精神链接时所沾染的气息。该气息可能携带来自异世的某种认知干扰讯号，使人类脑部无法正确解读其存在，从而引发生理与心理上的防卫反应。</p>
+
+                                <hr>
+
+                                <p class="stage-title">【部门建议】</p>
+                                <p class="indent"> 1.  禁止无关人员与其进行非必要的近距离接触，尤其是长时间面对面观测。</p>
+                                <p class="indent"> 2.  若需与对象进行任务协作，应确保所有成员魔力等级不低于 <strong>C 级</strong>，以降低副作用影响。</p>
+                                <p class="indent"> 3.  每次召唤异世生物时，应持续监测对象状态；如判断存在转化为「污染物」或引发高级灾害事件的风险，须即时启动对象颈部的爆炸装置以进行处置。</p>
+
+                            </div>
+                        </div>
+
+                        <hr class="section-divider">
+
+                        <!-- 档案 A：概念实体化的顾虑 -->
+                        <div class="secret-record minimal">
+                            <div class="secret-header">
+                                <span class="secret-title">权限V・补充资讯・关于「概念实体化」技术的顾虑</span>
+                                <div class="secret-subtitle">理想国研究中心内部会议节录——对技术原理不明与风险不可控的讨论纪要</div>
+                            </div>
+
+                            <div class="unlock-container">
+                                <button class="unlock-btn" onclick="toggleSecret(this)">🔒 点击展开全文</button>
+                            </div>
+
+                            <div class="secret-content prose">
+                                <p>「概念实体化」原本是项被理想国废置了近一个世纪的高危技术。</p>
+                                <p>只是随着污染的蔓延速度远超预期，我们别无他法，只能让这些连原理都尚未完全摸清的东西重见天日。</p>
+                                <p>试想像每个人的意识都是一条细小的河流，而千百条河最后汇入一片比海还广的洪流，我们就在那里舀走一桶最纯净的水，並把它带回现实——<span class="emphasis-dot">这就是「概念实体化」的雏形。</span></p>
+                                <p>我们最初在另一个宇宙观测到这项技术（是的，你应该还有印象，就是那个用字母来命名公司的宇宙），但卻无法完全理解其理论。老实说，我们简直就像一个牙牙学语的小孩，看过别人的拆装步骤后就一股腦地照着把零件重新拼回去，总之能运转就算成功。</p>
+                                <p>现意外至于未来会不会出事……</p>
+                                <p>沒有人能说得准，毕竟我们对它的了解太浅了。</p>
+                                <p>这就像是一个饥肠辘辘的人站在一台完全封闭的售货机前，在投下硬币时，那个人其实沒辦法得知下一刻从里面掉出来的会是糖果、饮料，还是一枚冒着热气的炸弹——</p>
+                                <p><span class="emphasis-dot">但硬币已经一次又一次地被投了进去。</span></p>
+                            </div>
+                        </div>
+
+                        <!-- 低调分隔条（非大档案那种） -->
+                        <hr class="section-divider">
+
+                        <!-- 档案 B：关于概念体·欢愉的回收争议 -->
+                        <div class="secret-record minimal">
+                            <div class="secret-header">
+                                <span class="secret-title">权限V・补充资讯・关于「概念体・欢愉」的回收争议</span>
+                                <div class="secret-subtitle">高层评议会记录——对现任继任者能力与「回收」风险的争论</div>
+                            </div>
+
+                            <div class="unlock-container">
+                                <button class="unlock-btn" onclick="toggleSecret(this)">🔒 点击展开全文</button>
+                            </div>
+
+                            <div class="secret-content prose">
+                                <p>雷尔提斯是个很优秀的概念体。</p>
+                                <p>我知道你想反驳——你觉得概念「欢愉」赋予他的能力有缺陷，而且他还不够聪明，也不合群。但是，我们派他去执行任务，他哪次拒绝过？</p>
+                                <p>是，他是有点特立独行，但他很听话啊，而且我实在想不出概念体为什么非得多聪明不可。</p>
+                                <p>要是个个都跟「概念体·爱」一样精明，你就开心了？</p>
+                                <p>你光听着就已经忍不住皱眉了吧。别说来十个八个了，只要再来一个「爱」那样的角色都足够我们喝一壶的了。</p>
+                                <p>愚钝的兵器或许不夠好用，但要是拿着一把太锋利的武器——那你在使用时得格外留心了，不然它一不小心就会划伤了你自己。</p>
+                                <p>总之，我不同意「回收」现在的概念体·欢愉。</p>
+                                <p>至于你不满他召唤异世生物的能力，觉得那跟召唤汙染物差不多，一不小心就会引发灾害事件——</p>
+                                <p>那你「回收」了他，就能保证下一个继任者得到的能力一定更完美了吗？</p>
+                                <p>万一更糟呢？</p>
+                                <p>万一你摇出了一个能让异世降临到现实，又或者是必定会召唤出古神的继任者——到那时候，你就知道还能被我们管控着的雷尔提斯到底有多安全了。</p>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -333,14 +521,34 @@
     </div>
 
     <script>
+        // 新的通用函式：任何解鎖區都能用
+        function unlockContentById(id, btn) {
+            const box = document.getElementById(id);
+            if (!box) return;
+
+            // 展開內容
+            box.style.display = 'block';
+
+            // 顯示藍色提示條（如果有）
+            const banner = box.querySelector('.unlock-banner');
+            if (banner) banner.style.display = 'flex';
+
+            // 改變按鈕狀態（如果傳了 this 進來）
+            if (btn) {
+                btn.innerHTML = '🔓 已解锁';
+                btn.disabled = true;
+                btn.style.opacity = '0.5';
+            }
+        }
+
+        // 兼容舊寫法（你的 IV 之前用的 unlockContent()）
         function unlockContent() {
-            document.getElementById('lockedContent').style.display = 'block';
-            const btn = document.querySelector('.unlock-btn');
-            btn.innerHTML = '🔓 已解锁';
-            btn.disabled = true;
-            btn.style.opacity = '0.5';
+            // 舊版預設展開這個 ID（跟你之前一致）
+            unlockContentById('lockedContentIV', document.querySelector('.unlock-btn.tier-4') || document.querySelector('.unlock-btn'));
         }
     </script>
+
+
 
 
     <script src="./js/main.js"></script>
