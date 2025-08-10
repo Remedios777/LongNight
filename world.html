@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>世界观 - Long Night</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Noto+Sans:wght@400;500;700&family=Inter:wght@300;400;500&display=swap">
 </head>
 <body class="world-page">
@@ -13,115 +13,628 @@
         <div class="bg-image"></div>
         <div class="bg-fog"></div>
     </div>
-    
+
     <div class="page-navigation">
-        <a href="index.html" class="home-link">返回首页</a>
+        <a href="./index.html" class="home-link">返回首页</a>
     </div>
-    
+
     <div class="content-container">
-        <h1 class="section-title">世界观设定</h1>
-        
+        <h1 class="page-title">漫漫长夜</h1>
+        <p class="page-subtitle">一场突如其来的末日摧毁了发展鼎盛的旧世界，而幸存的人类将要在这片充满危险的废土上寻求生路。</p>
+    </div>
+
+    <div class="content-container">
+        <h1 class="section-title">世界观</h1>
+
         <div class="world-timeline">
             <div class="timeline-card">
-                <h3>污染等级机制</h3>
-                <div class="card-content">
-                    <p>在长夜世界中，污染是一种无形的力量，它侵蚀着一切生命和物质。污染等级从0%到100%不等，代表着个体或区域被污染的程度。</p>
-                    <p>0-20%：轻微污染，表现为轻微的身体不适，偶尔的幻觉。大多数人类在这个阶段可以正常生活。</p>
-                    <p>21-50%：中度污染，开始出现明显的身体变异，精神异常，但意识仍然清醒。</p>
-                    <p>51-80%：重度污染，身体大部分区域已经变异，精神受到严重影响，开始丧失人类意识。</p>
-                    <p>81-99%：临界污染，几乎完全变异为非人形态，意识被污染侵蚀，只保留极少的人类记忆。</p>
-                    <p>100%：完全污染，彻底转化为污染生物，完全丧失人类意识和记忆，成为长夜的一部分。</p>
-                    <p>特殊情况：某些个体（如Noah和Laertes）即使在高污染值下仍能保持部分人类意识，这被称为"污染抗性"，是极为罕见的特质。</p>
-                </div>
-            </div>
-            
-            <div class="timeline-card">
-                <h3>长夜</h3>
-                <div class="card-content">
-                    <p>长夜不仅是一个时间概念，更是一种存在状态。它是污染浓度达到临界点后，世界陷入的永恒黑暗。</p>
-                    <p>在长夜中，太阳永远不会升起，天空被厚重的污染云层覆盖，只有微弱的月光能够穿透。这不是普通的夜晚，而是一种混沌与秩序的边界状态。</p>
-                    <p>长夜中的时间流动异常，有些区域时间几乎静止，而有些区域则时间流速不稳定。这导致了"时间口袋"的形成，一些人可能在长夜中度过了几天，而外界已经过去了数年。</p>
-                    <p>长夜被认为是通往"彼岸"的通道，那里可能存在着超越人类理解的存在。有传言称，长夜的尽头是新世界的开始，但没有人能够证实这一点。</p>
-                </div>
-            </div>
-            
-            <div class="timeline-card">
-                <h3>旧世界毁灭简史</h3>
-                <div class="card-content">
-                    <p><strong>第一纪元（黎明时代）</strong>：人类文明达到顶峰，科技高度发达，开始探索意识与物质的边界。</p>
-                    <p><strong>第一次污染事件（30年前）</strong>：在一次跨维度实验中，研究人员意外打开了通往"彼岸"的裂缝，污染开始渗入世界。</p>
-                    <p><strong>第二纪元（衰落时代）</strong>：污染迅速扩散，人类社会开始崩溃，大规模死亡和变异出现。三大势力在混乱中崛起，各自提出应对污染的方案。</p>
-                    <p><strong>大崩塌（15年前）</strong>：污染达到临界点，世界结构开始崩溃，大部分城市沦陷，成为污染区。幸存者逃往少数几个安全区。</p>
-                    <p><strong>第三纪元（长夜时代）</strong>：世界陷入永恒的黑暗，长夜降临。人类文明退化为小型聚落和孤立的安全区，在污染的包围中苟延残喘。</p>
-                    <p><strong>现在</strong>：污染继续蔓延，安全区不断缩小。三大势力在残破的世界中争夺资源和权力，而长夜的秘密仍然未解。</p>
-                </div>
-            </div>
-        </div>
-        
-        <h2 class="section-title">三大势力</h2>
-        
-        <div class="faction-container">
-            <div class="faction-card">
-                <h3>伊甸园</h3>
-                <p>一个以纯净为信条的组织，致力于消除一切污染，恢复世界的原始状态。他们相信只有彻底净化才能拯救人类。</p>
-                <p>伊甸园拥有最先进的净化技术，能够暂时降低区域内的污染浓度，创造"净土"。他们的成员通常穿着纯白色的防护服，象征纯净。</p>
-                <p>然而，伊甸园的极端主义者认为已经被污染的个体无法被拯救，必须被"净化"（即处决），这导致了他们与其他势力的冲突。</p>
-                <p>伊甸园的总部被称为"方舟"，是最后一个完全无污染的区域，只有极少数人能够进入。</p>
-            </div>
-            
-            <div class="faction-card">
-                <h3>理想国</h3>
-                <p>一个以科学和理性为基础的组织，相信人类可以通过技术手段适应污染，甚至利用污染的力量。</p>
-                <p>理想国的科学家们研究污染的本质，试图开发能够控制污染的技术。他们创造了"适应者"——能够在高污染环境中生存的改造人。</p>
-                <p>理想国的理念是进化而非净化，他们认为污染是一种进化催化剂，可以帮助人类超越自身的限制。</p>
-                <p>理想国的总部是一座巨大的浮空城市"新亚特兰蒂斯"，悬浮在污染最严重的区域上方，象征着科技对自然的超越。</p>
-            </div>
-            
-            <div class="faction-card">
-                <h3>全知之眼</h3>
-                <p>一个神秘的宗教组织，相信长夜是神圣的启示，污染是通往超越的道路。</p>
-                <p>全知之眼的成员崇拜"彼岸"的存在，认为只有接受污染的洗礼，才能看到真实的世界。他们通过仪式和冥想，尝试与"彼岸"沟通。</p>
-                <p>与其他两个势力不同，全知之眼不试图对抗或控制污染，而是寻求与之共存，理解其本质。他们相信长夜的尽头是新的启示。</p>
-                <p>全知之眼没有固定的总部，而是在世界各地建立"观测站"，这些地方通常位于污染与非污染区域的边界，被称为"视界"。</p>
-            </div>
-        </div>
-        
-        <div class="pollution-level-visualization">
-            <h2 class="section-title">污染等级可视化</h2>
-            <div class="pollution-chart">
-                <!-- 这里可以放置一个污染等级的图表或可视化元素 -->
-                <div class="pollution-bar">
-                    <div class="level level-1" data-level="0-20%">
-                        <span class="level-label">轻微污染</span>
-                    </div>
-                    <div class="level level-2" data-level="21-50%">
-                        <span class="level-label">中度污染</span>
-                    </div>
-                    <div class="level level-3" data-level="51-80%">
-                        <span class="level-label">重度污染</span>
-                    </div>
-                    <div class="level level-4" data-level="81-99%">
-                        <span class="level-label">临界污染</span>
-                    </div>
-                    <div class="level level-5" data-level="100%">
-                        <span class="level-label">完全污染</span>
-                    </div>
-                </div>
-                <div class="pollution-effects">
-                    <p>随着污染等级的提高，个体会经历一系列变化：</p>
-                    <ul>
-                        <li>感知扭曲：现实与幻觉的界限模糊</li>
-                        <li>身体变异：器官功能改变，新器官生成</li>
-                        <li>意识分裂：多重人格，记忆碎片化</li>
-                        <li>能力觉醒：某些个体可能获得超常能力</li>
-                        <li>存在形态改变：物质与能量状态的转换</li>
+
+                <section class="xl-section">
+                    <h1 class="pollution-title">污染</h1>
+                    <p class="xl-lead">
+                        污染（execration）为末日后出现的全球性异常现象，其源头与传播方式至今仍未确定。
+                        它是导致废土危险的主要原因，并直接影响全人类的存亡。
+                    </p>
+
+                    <h2 class="xl-subtitle">污染值分级说明</h2>
+
+                    <ul class="xl-tier-list">
+                        <li class="xl-tier">
+                            <span class="xl-badge xl-badge--low">0–19%</span>
+                            <div class="xl-tier-body">
+                                <div class="xl-tier-name">低污染区</div>
+                                <p>无显著异常现象，部分魔法学效果受抑制或失效。</p>
+                            </div>
+                        </li>
+
+                        <li class="xl-tier">
+                            <span class="xl-badge xl-badge--mid">20–49%</span>
+                            <div class="xl-tier-body">
+                                <div class="xl-tier-name">中污染区</div>
+                                <p>开始出现“污染物”与“异常现象”。污染物通常为结构异常之生物体；异常现象涉及一项或多项自然科学定律失效（如肉体逆生长、平地生成“虫洞”、走廊无限延伸等）。该阶段可能出现“异常物品”，大部分魔法学可正常运作。</p>
+                            </div>
+                        </li>
+
+                        <li class="xl-tier">
+                            <span class="xl-badge xl-badge--high">50–99%</span>
+                            <div class="xl-tier-body">
+                                <div class="xl-tier-name">高污染区</div>
+                                <p>有几率生成“副本”，异常物品出现频率提升，全部魔法学均可正常发动。</p>
+                            </div>
+                        </li>
+
+                        <li class="xl-tier">
+                            <span class="xl-badge xl-badge--end">100%</span>
+                            <div class="xl-tier-body">
+                                <div class="xl-tier-name">长夜区</div>
+                                <p>区域将被永不退散的黑暗覆盖——此现象称为“长夜”。“长夜”内的所有法则都会扭曲为不适合人类生存之形态，该地区被视为永久失落地带，从人类可活动范围中剔除。</p>
+                            </div>
+                        </li>
                     </ul>
+
+                    <div class="pollution-level-visualization">
+                        <div class="pollution-chart">
+                            <div class="pollution-bar">
+                                <div class="pollution-segment pollution-segment--low">
+                                    <span class="label">低污染區</span>
+                                </div>
+                                <div class="pollution-segment pollution-segment--mid">
+                                    <span class="label"> 中污染區</span>
+                                </div>
+                                <div class="pollution-segment pollution-segment--high">
+                                    <span class="label">高污染區</span>
+                                </div>
+
+                                <!-- 100% 終點：細窄終點帶（不是比例段） -->
+                                <div class="pollution-end">
+                                    <span class="label end"> 長夜區</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="timeline-card">
+                <section class="sec">
+                    <h2 class="pollution-title">清理污染</h2>
+
+                    <p class="xl-lead">
+                        污染值可以下降，但仅能在达到 100% 前进行干预。主要干預手段包括：通关「副本」、摧毁污染物聚集地或巢穴、大规模剿灭污染物。
+                    </p>
+
+                    <div class="tiers">
+                        <div class="chip">
+                            <div class="badge">0–19%</div>
+                            <h4>低污染区</h4>
+                            <p>适合建设聚居地。</p>
+                        </div>
+                        <div class="chip">
+                            <div class="badge badge--mid">20–49%</div>
+                            <h4>中污染区</h4>
+                            <p>收复与净化的优先目标。</p>
+                        </div>
+                        <div class="chip">
+                            <div class="badge badge--high">50–99%</div>
+                            <h4>高污染区</h4>
+                            <p>需高等战力或军队方可进入清理。</p>
+                        </div>
+                    </div>
+
+                    <p class="note">当污染值达 <strong>100%</strong>，任何清理措施均无效，该区域将永久被“长夜”覆盖。</p>
+                </section>
+            </div>
+
+            <div class="timeline-card">
+                <section class="omni">
+                    <!-- 標題：沿用你現成的 .pollution-title -->
+                    <h2 class="pollution-title">全知</h2>
+
+                    <!-- 導語：和上面的「污染」同風格，單獨一句 -->
+                    <p class="xl-lead">
+                        末日之后，人类获得了一种前所未有的能力——只需一个念头，就能夠在眼前唤出一块悬浮的「面板」。
+                    </p>
+
+                    <!-- 主內容：左文字 | 中縱線 | 右面板示例 -->
+                    <div class="omni-grid">
+                        <div class="omni-text">
+                            <p>面板可：</p>
+                            <ul class="omni-list">
+                                <li>显示所在地区的污染值；</li>
+                                <li>列出个人属性、技能与装备状态；</li>
+                                <li>标出周边地图，并派送任务；</li>
+                                <li>结算任务，发放 <strong>pt</strong> 点数。</li>
+                            </ul>
+
+                            <p>
+                                <strong>pt 点数</strong>不可转让，你可以用它来在「系统商店」里购买各式各样的东西，比如日常用品、稀有的异常物品、能改变战局的技能卡、甚至是副本攻略和难以言喻的神秘之物。每个人在商店里看到的东西都不儘相同，而无论是否有过购物，商店都会固定在每周一刷新。
+                            </p>
+
+                            <p class="omni-note">
+                                面板左上角刻有一只由眼形延伸的图案，旁边印着「全知」二字——久而久之，人们称其为
+                                <strong>全知系统</strong>。在如今的废土上，全知系统已成为了人们清理污染时的一大助力，若没有它，恐怕「长夜」早已覆盖整个世界。
+                            </p>
+
+                        </div>
+
+                        <div class="omni-divider" aria-hidden="true"></div>
+
+                        <aside class="omni-panel" aria-label="全知系统示意">
+                            <header class="op-head">
+                                <span class="op-eye" aria-hidden="true"></span>
+                                <span class="op-title">全知</span>
+                            </header>
+
+                            <div class="op-row"><span class="op-label">污染值</span><span class="op-value">32%</span></div>
+                            <div class="op-row"><span class="op-label">属性</span><span class="op-value">体12 / 智15 / 意18</span></div>
+                            <div class="op-row"><span class="op-label">技能</span><span class="op-value">治癒之手 · Ⅱ</span></div>
+                            <div class="op-row"><span class="op-label">装备</span><span class="op-value">护符·体力 +10%</span></div>
+
+                            <div class="op-sep"></div>
+
+                            <div class="op-task">
+                                <div class="op-task-title">任务：通关C级副本“奇美拉基因工坊”</div>
+                                <div class="op-task-meta">奖励：+120 pt · 期限：48h</div>
+                            </div>
+
+                            <footer class="op-foot">距离商店刷新还有2天，14:58:41</footer>
+                            <p class="op-caption">以上为面板示例</p>
+                        </aside>
+                    </div>
+                </section>
+
+
+
+            </div>
+
+            <div class="timeline-card">
+                <section class="history">
+                    <h2 class="pollution-title">简史</h2>
+
+                    <div class="timeline">
+                        <article class="event">
+                            <h3 class="event-header">
+                                <span class="era">前文明纪元</span>
+                                <span class="time">（距今约 1900 年前）</span>
+                            </h3>
+                            <p class="event-desc">拥有成熟的工业、交通与文化体系，为科技飞跃前的稳定时代。</p>
+                        </article>
+
+                        <article class="event">
+                            <h3 class="event-header">
+                                <span class="era">繁华纪元（旧世界）</span>
+                                <span class="time">（距今约 1650 年前）</span>
+                            </h3>
+                            <p class="event-desc">
+                                生物学上发生了技术奇点，人类正迈入科技黄金时代。<br>
+                                繁华纪元的生物能源近乎于取之不尽，而基因编辑又让人类大幅延长了寿命，甚至能实现长生不老，最后是人工智能——神经网络催生出了高效计算机及堪称无所不能的 AI，人类正式突破了肉身与环境的限制，文明宛如幻想般美好。
+                            </p>
+                        </article>
+
+                        <article class="event">
+                            <h3 class="event-header">
+                                <span class="era">大洪水（末日）</span>
+                                <span class="time">（距今 857 年前）</span>
+                            </h3>
+                            <p class="event-desc">
+                                一场成因不明的灾厄以极短的速度摧毁了旧世界——根据当时留下来的幸存者手记，整个过程大概只有三秒。<br>
+                                大多数城市化为废墟，更多地方被抹除得不留痕迹，只有小部分地区，比如理想集团的总部成功逃过一劫。<br>
+                                时至今日，人们依旧无法确定这场末日的本质与起源。
+                            </p>
+                        </article>
+
+                        <article class="event">
+                            <h3 class="event-header">
+                                <span class="era">长夜纪元</span>
+                                <span class="time">（距今 857 年前至今）</span>
+                            </h3>
+                            <p class="event-desc">
+                                人类在废土上艰难地重建家园，试图与污染共存。<br>
+                                但在过去百年间，污染值呈几何倍数增长——于一百年前，长夜还只覆盖了全球三成土地，如今却已逼近六成。<br>
+                                按当前速度推算，剩余的可居住地恐怕未来三十年内也将全部消失，人类宣告灭亡。
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+            </div>
+
+
+        </div>
+
+        <h2 class="section-title">势力</h2>
+
+        <div class="faction-container">
+
+            <!-- 伊甸园 -->
+            <div class="faction-card">
+                <h3 class="faction-title">伊甸园</h3>
+
+                <p class="faction-lead">
+                    伊甸园源自于末日前的天主教。在末日后，大量幸存下来的人口开始信奉上主，
+                    他们认为末日就是《启示录》中所预言的灾厄，唯有真诚悔改方能换取主的救赎。
+                    教义也逐渐演变为“崇尚苦难”，并视受苦为洗去原罪的唯一途径；入教者必须在受难基督像前承受一场酷刑，以此证明忏改之心。
+                </p>
+
+                <!-- 自定义“查看更多” -->
+                <button class="fold-btn" data-target="eden-more" aria-expanded="false">点击查看更多</button>
+                <div id="eden-more" class="fold-content" hidden>
+                    <div class="faction-divider"></div>
+
+                    <h4 class="faction-sub">神恩</h4>
+                    <p>
+                        离圣城梵蒂冈越近，当地人的魔力等级便普遍越高。
+                        理想国居民平均仅有 D 级魔力，伊甸园信徒则多为 C 级，而圣城中更有不少人能达到 B 级甚至 A 级。
+                        这被视为“神恩”的体现，也是他们能够持续收复中度污染地区的主要原因。
+                        如今，约三分之一的人类活动范围属于伊甸园的统治。
+                    </p>
+
+                    <h4 class="faction-sub">教皇赛马尼</h4>
+                    <p>
+                        自五十年前教皇赛马尼继任以来，伊甸园的教义日益激进。
+                        刑罚开始变得残酷而频繁，每日死于刑场的人不胜其数——讽刺的是，这却意外缓解了因污染导致的领土缩减所带来的人口压力。
+                        与此同时，伊甸园对异种族的容忍逐渐降低至零：过去他们虽受排斥仍能生存，如今几乎不可能在伊甸园中找到异种族。
+                        教皇甚至会命令十字军主动在废土上猎杀他们，就与剿灭污染物无异。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 理想国 -->
+            <div class="faction-card">
+                <h3 class="faction-title">理想国</h3>
+
+                <p class="faction-lead">
+                    由理想集团建立。在末日发生时，集团总部所在地奇迹般未受影响，因而保留部分旧世界科技。
+                    依托这些宝贵遗产，他们建立了宜居的“理想国”。
+                </p>
+
+                <button class="fold-btn" data-target="ideal-more" aria-expanded="false">点击查看更多</button>
+                <div id="ideal-more" class="fold-content" hidden>
+                    <div class="faction-divider"></div>
+
+                    <h4 class="faction-sub">地理与结构</h4>
+                    <p>
+                        为降低污染与异常现象威胁，理想国多数城市建于高空，利用旧世界反重力核心与磁悬浮阵列支撑，被称为“浮空城”。
+                        浮空城能避开大部分地面污染物，并借由高空稀薄大气隔绝部分异常效应，同时有效限制外来人口进入。
+                    </p>
+
+                    <h4 class="faction-sub">国民划分制度</h4>
+                    <ul class="faction-list">
+                        <li><strong>永久国民：</strong>享有完全居住权，可参与公民事务选举，优先购买理想国提供的服务与商品，并有资格拥有房产。取得资格通常需具备卓越科研成就、清理污染的重大贡献、极高资产，或与理想集团有直接关系。</li>
+                        <li><strong>非永久国民：</strong>无投票权与大部分特权，每月需缴纳高额生存税，欠缴者将立即驱逐出国。</li>
+                    </ul>
+
+                    <h4 class="faction-sub">科研体系</h4>
+                    <ol class="faction-ol">
+                        <li>第一研究中心：成立最久，研究领域广泛；</li>
+                        <li>第二研究中心：末日与污染研究；</li>
+                        <li>第三研究中心：异常物品与副本机制研究；</li>
+                        <li>第四研究中心：生化与医疗技术；</li>
+                        <li>第五研究中心：能源与防卫系统。</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- 荒芜地带 -->
+            <div class="faction-card">
+                <h3 class="faction-title">荒芜地带</h3>
+
+                <p class="faction-lead">
+                    荒芜地带指既不属于伊甸园，也不受理想国管辖的区域。绝大多数为中高污染区，环境恶劣到不适合任何生命体长期生存。
+                    不过其中也有少量低污染地区，零星村落与简陋城镇分布其间，但更常见的是拾荒者营地与流动车队。
+                </p>
+
+                <button class="fold-btn" data-target="wastes-more" aria-expanded="false">点击查看更多</button>
+                <div id="wastes-more" class="fold-content" hidden>
+                    <div class="faction-divider"></div>
+
+                    <h4 class="faction-sub">聚居地</h4>
+                    <p>
+                        污染会不定期带来“污染物”与“异常现象”，足以摧毁所有小型聚居地。拾荒者无法像理想国或伊甸园那样抵御污染，
+                        唯一对策是不停迁徙——一旦有威胁逼近，他们便会立刻拆除营地，带着所有可携资源迁往下一处宜居地。
+                        资源在荒芜地带极为匮乏：食物、干净水源和燃料往往比武器更值钱，道德底线几乎不存在。
+                    </p>
+
+                    <h4 class="faction-sub">文明与秩序</h4>
+                    <p>
+                        虽然缺乏统一政权，但仍有零星势力试图建立规则，如大型车队间的互不侵犯条约、某些商路的中立地约定。
+                        然而这些规则往往脆弱不堪，一场突如其来的资源危机就足以令协议化为废纸。
+                        对当地居民而言，能活到下一次日出便已值得庆祝。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 全知之眼 -->
+            <div class="faction-card">
+                <h3 class="faction-title">全知之眼</h3>
+
+                <p class="faction-lead">
+                    全知之眼是一个行踪神秘的小型组织，名称直接取自“全知系统”，外界普遍认为他们将其奉为信仰。
+                    该组织成员稀少且身份隐秘，据说在伊甸园与理想国的高层中都有人为之效力。
+                </p>
+
+                <button class="fold-btn" data-target="eye-more" aria-expanded="false">点击查看更多</button>
+                <div id="eye-more" class="fold-content" hidden>
+                    <div class="faction-divider"></div>
+
+                    <h4 class="faction-sub">末日真相？</h4>
+                    <p>
+                        该组织行事目的不明，但时常在关键事件中被目击。
+                        有人猜测，全知之眼或与全知系统的起源存在直接关联，甚至知晓末日真相——但这一切从未被证实。
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    
-    
+
+
+    <!-- 录音带 -->
+    <section class="ux-sec">
+        <button class="section-toggle" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10H3V7zm3 2h12v4H6V9zm2 6h2l1 2h4l1-2h2v2H8v-2zM7 11h2v2H7v-2zm8 0h2v2h-2v-2z" /></svg>
+            </span>
+            <span class="section-title">
+                <span class="main">回收于■ ■ ■的磁带 A-17</span>
+                <span class="sub">来源：未知发信台 · 记录介质：FeCr 磁带 · 状态：破损</span>
+            </span>
+        </button>
+
+        <div class="section-panel">
+            <div class="tape-wrap">
+                <div class="ux-tape">
+                    <div class="ux-tape-head">
+                        <button class="ux-tape-btn" data-target="tape-1" aria-expanded="false">▶ 播放录音？</button>
+                        <small class="ux-tape-meta">【录音开始——】</small>
+                    </div>
+
+                    <div class="ux-tape-screen">
+                        <div id="tape-1" class="ux-tape-lines" aria-live="polite"></div>
+                        <div class="ux-tape-noise" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="ux-tape-foot">
+                        <button class="ux-tape-replay" hidden>重播</button>
+                        <span class="ux-tape-end" hidden>【录音结束】</span>
+                    </div>
+
+                    <template class="ux-tape-template">
+                        [女声] ……你看，数据很清楚，在污染值较高的地区，魔法学的…………
+                        [女声] 不，我不是在说假设，这是事实。
+                        [女声] ——你不觉得奇怪吗？第一个使用魔法的人……究竟是谁？
+                        [噪音] （一片杂音，然后长久的寂静）
+                        [女声] ……这是具体的统计资料，在污染值越高的地区，魔法学通常就越能生效（噪声）……
+                        [噪音] （杂音，听不清的争吵声，一阵尖锐的呜叫）
+                        [女声] ——难道这还不够明显吗？
+                        [女声] 还是你们没有人愿意去承认这个可能性？
+                        [女声]          <span data-speed="120"><strong>      魔法与污染，本质上是完全相同的         </strong></span>
+                        [女声] 它现在对人类有益，但只是现在，但我们不知道，它什么时候就会变成……
+                        [旁白] 【直至录音结束，再无可辨识的语音】
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文档：标题条文本改为 档案「EX-Ω-144」；灰色副标题重写；前缀只三项；内文标题小+左对齐 -->
+    <section class="ux-sec">
+        <button class="section-toggle" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 6a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6z" /></svg>
+            </span>
+            <span class="section-title">
+                <span class="main">档案「EX-Ω-144」</span>
+                <span class="sub">来源：理想国第四研究中心 — 基因工程部 </span>
+            </span>
+        </button>
+
+        <div class="section-panel">
+            <article class="dossier">
+                <header class="dossier-head">
+
+                    <h3 class="dossier-title--inner">实验文档：全知系统基因链启动假说</h3>
+
+                    <!-- 前缀：只三项 & 用你指定的字样 -->
+                    <dl class="kv-v">
+                        <div class="row"><dt>档案编号</dt><dd>EX-Ω-144</dd></div>
+                        <div class="row"><dt>提交部</dt><dd>理想国第四研究中心 — 基因工程部</dd></div>
+                        <div class="row"><dt>安保等级</dt><dd>？？？</dd></div>
+                    </dl>
+                </header>
+
+                <!-- 内文标题（小一号 + 置左） -->
+                
+
+                <h4 class="paper-h">摘要</h4>
+                <p>
+                    根据对旧世界数据库的整理与现存样本的比对，我们发现全知系统的出现，可能与末日前进行的一项
+                    <span class="reveal"><span>基因链改造计划</span></span> 有关。该计划疑似由旧世界的联邦政府发起，旨在为不可控的大崩坏事件预留人类的「生存应急模组」。
+                </p>
+
+                <h4 class="paper-h">技术背景</h4>
+                <ul class="paper-ul">
+                    <li>旧世界的生物学与基因工程技术已能在 DNA 上嵌入休眠状态的复合基因链，并在特定环境刺激下启动。</li>
+                    <li>我们在现代人类的基因序列中发现一段高度一致的「非编码区域」，其序列与旧世界某机密项目代号 OBX-13 的记录完全吻合。</li>
+                    <li>模拟显示，这段基因链在极端压力环境下（气候变异、特定电磁频率叠加）会被启动，并在神经层面建立类似「全知系统」的界面反应。</li>
+                </ul>
+
+                <h4 class="paper-h">现象说明</h4>
+                <p>
+                    基因链启动后，受试者能以意念调用信息界面，获取自身的能力数值、地区污染值、地理环境与特定「任务」提示，并在完成任务后获得不可转让的 pt 点数。
+                    然而，关于以下问题，目前无任何理论可解释：
+                </p>
+                <ol class="paper-ol">
+                    <li class="reveal"><span>对周围环境的检测途径；</span></li>
+                    <li class="reveal"><span>系统商店中商品的物质化过程；</span></li>
+                    <li class="reveal"><span>不同使用者之间商品列表的差异来源。</span></li>
+                </ol>
+
+                <h4 class="paper-h">结论与备注</h4>
+                <p>全知系统的核心功能，虽可能以基因链改造为触发基础，但显然还涉及超出现有人类科学范畴的因素。该因素的本质、来源与运作方式……目前未知。</p>
+
+                <blockquote class="paper-scribble reveal">
+                    <span>
+                        （在文档背面，你发现了一段极为潦草的字迹。）<br>
+                        我只是在想，一直都在想……如果这个世界真有「神明」存在呢？
+                    </span>
+                </blockquote>
+            </article>
+        </div>
+    </section>
+
+
+    <script>
+        (function () {
+            /* 标题折叠：点击标题条展开/收起 */
+            document.querySelectorAll('.section-toggle').forEach(btn => {
+                const panel = btn.nextElementSibling;
+                btn.addEventListener('click', () => {
+                    const open = btn.getAttribute('aria-expanded') === 'true';
+                    btn.setAttribute('aria-expanded', String(!open));
+                    panel.classList.toggle('open', !open);
+                });
+            });
+
+            /* 涂黑点击显示（仅 .reveal） */
+            document.addEventListener('click', e => {
+                const blk = e.target.closest('.reveal');
+                if (blk) blk.classList.toggle('open');
+            });
+
+            /* 录音：逐行打字（速度：40 / 200 / 350） */
+            const baseSpeed = 40;
+            const pauseLine = 200;
+            const pauseEllipsis = 350;
+
+            function typeLine(container, who, text, isNoise, cb) {
+                const row = document.createElement('div');
+                row.className = 'ux-line' + (isNoise ? ' ux-noise' : '');
+                const swho = document.createElement('div');
+                swho.className = 'ux-who';
+                swho.textContent = who || '';
+                const swhat = document.createElement('div');
+                swhat.className = 'ux-what';
+                row.appendChild(swho);
+                row.appendChild(swhat);
+                container.appendChild(row);
+
+                // 提取速度
+                const speedMatch = text.match(/data-speed="(\d+)"/);
+                const lineSpeed = speedMatch ? Number(speedMatch[1]) : baseSpeed;
+                text = text.replace(/\s*data-speed="[^"]*"/, '');
+
+                // 用瀏覽器解析 HTML
+                const temp = document.createElement('div');
+                temp.innerHTML = text;
+
+                // 把 DOM 轉成 token 列表
+                let tokens = [];
+                function walk(node) {
+                    if (node.nodeType === Node.TEXT_NODE) {
+                        tokens.push(...node.textContent.split('').map(ch => ({ type: 'char', value: ch })));
+                    } else if (node.nodeType === Node.ELEMENT_NODE) {
+                        const clone = node.cloneNode(false);
+                        tokens.push({ type: 'openTag', value: clone });
+                        node.childNodes.forEach(walk);
+                        tokens.push({ type: 'closeTag', value: node.tagName.toLowerCase() });
+                    }
+                }
+                temp.childNodes.forEach(walk);
+
+                // 按 token 打字
+                let i = 0;
+                let stack = [swhat];
+                function tick() {
+                    if (i >= tokens.length) { setTimeout(cb, pauseLine); return; }
+                    const t = tokens[i++];
+                    if (t.type === 'char') {
+                        stack[stack.length - 1].append(t.value);
+                        setTimeout(tick, lineSpeed + (t.value === '…' ? pauseEllipsis : 0));
+                    } else if (t.type === 'openTag') {
+                        const el = t.value;
+                        stack[stack.length - 1].appendChild(el);
+                        stack.push(el);
+                        tick(); // 標籤瞬間插入，不延遲
+                    } else if (t.type === 'closeTag') {
+                        stack.pop();
+                        tick(); // 標籤瞬間結束，不延遲
+                    }
+                }
+                tick();
+            }
+
+
+
+
+
+
+            function playTape(card) {
+                const btn = card.querySelector('.ux-tape-btn');
+                const linesBox = card.querySelector('.ux-tape-lines');
+                const tpl = card.querySelector('.ux-tape-template');
+                const replay = card.querySelector('.ux-tape-replay');
+                const end = card.querySelector('.ux-tape-end');
+
+                const raw = (tpl?.innerHTML || '').trim().split('\n').map(s => s.trim()).filter(Boolean);
+                const lines = raw.map(s => {
+                    const m = s.match(/^\[([^\]]+)\]\s*(.*)$/);
+                    const tag = m ? m[1] : '旁白';
+                    const body = m ? m[2] : s;
+                    const isNoise = /噪音|杂音|旁白/.test(tag);
+                    return { who: tag, body, isNoise };
+                });
+
+                linesBox.innerHTML = ''; end.hidden = true; replay.hidden = true;
+                btn.setAttribute('aria-expanded', 'true');
+
+                let idx = 0; (function next() {
+                    if (idx >= lines.length) { end.hidden = false; replay.hidden = false; return; }
+                    const { who, body, isNoise } = lines[idx++]; typeLine(linesBox, who, body, isNoise, next);
+                })();
+            }
+
+            document.querySelectorAll('.ux-tape').forEach(card => {
+                const btn = card.querySelector('.ux-tape-btn');
+                const replay = card.querySelector('.ux-tape-replay');
+                const run = () => playTape(card);
+                btn.addEventListener('click', run);
+                replay.addEventListener('click', run);
+            });
+        })();
+    </script>
+
+
+
+
+
+
+    <script>
+        document.addEventListener('click', function (e) {
+            const btn = e.target.closest('.fold-btn');
+            if (!btn) return;
+            const id = btn.getAttribute('data-target');
+            const panel = document.getElementById(id);
+            const open = btn.getAttribute('aria-expanded') === 'true';
+
+            if (open) {
+                panel.setAttribute('hidden', '');
+                btn.setAttribute('aria-expanded', 'false');
+                btn.textContent = '点击查看更多';
+                btn.closest('.faction-card')?.classList.remove('is-open');
+            } else {
+                panel.removeAttribute('hidden');
+                btn.setAttribute('aria-expanded', 'true');
+                btn.textContent = '收起';
+                btn.closest('.faction-card')?.classList.add('is-open');
+            }
+        });
+    </script>
+
+
+
+
     <script src="js/main.js"></script>
 </body>
 </html>
