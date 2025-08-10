@@ -2261,7 +2261,7 @@ blockquote.gospel {
     text-align: center
 }
 
-.badge {
+.sec-badge {
     display: inline-block;
     min-width: 88px;
     padding: 6px 10px;
@@ -2273,11 +2273,11 @@ blockquote.gospel {
     font-size: 13px
 }
 
-.badge--mid {
+.sec-badge--mid {
     background: #f1c40f
 }
 
-.badge--high {
+.sec-badge--high {
     background: #e67e22
 }
 
@@ -3034,4 +3034,9 @@ blockquote.gospel {
         visibility: visible
     }
 
+@media (max-width: 480px) {
+    .dossier-title.mystic {
+        font-size: 24px;
+    }
+}
 
