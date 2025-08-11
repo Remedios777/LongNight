@@ -507,3 +507,99 @@ function toggleSecret(btn) {
 
 
 
+// 背景隨機星點
+(function makeBackgroundStars() {
+    const holder = document.querySelector('.stars');
+    const COUNT = 120;
+    for (let i = 0; i < COUNT; i++) {
+        const s = document.createElement('div');
+        s.className = 'star';
+        s.style.top = Math.random() * 100 + '%';
+        s.style.left = Math.random() * 100 + '%';
+        s.style.animationDuration = (1 + Math.random() * 2.2) + 's';
+        s.style.animationDelay = (Math.random() * 2) + 's';
+        holder.appendChild(s);
+    }
+})();
+
+// 逐步流程控制：行文 → 晚安 → 星星描述 → 星星按鈕 → 安慰段
+document.addEventListener('DOMContentLoaded', () => {
+    const lines = [...document.querySelectorAll('.line')];
+    const goodnight = document.getElementById('goodnight');
+    const starDesc = document.getElementById('star-desc');
+    const wishStar = document.getElementById('wish-star');
+    const comfort = document.getElementById('comfort');
+
+    // 先全部隱藏（保險）
+    lines.forEach(el => el.classList.remove('show'));
+
+    // 依序顯示普通行文（到「蓋小被子」那行為止）
+    const baseDelay = 500;       // 每行間隔
+    const startDelay = 300;      // 開始前延遲
+    let t = startDelay;
+
+    // 只到「少年說着，…蓋上。」(data-step=13) 先跑完
+    const lastStep = 13;
+
+    lines
+        .filter(el => Number(el.dataset.step) && Number(el.dataset.step) <= lastStep)
+        .forEach((el, idx) => {
+            setTimeout(() => el.classList.add('show'), t);
+            t += baseDelay + Math.random() * 200; // 小隨機更自然
+        });
+
+    // 跑完前半段後，顯示「晚安」
+    t += 500;
+    setTimeout(() => {
+        goodnight.classList.remove('hidden');
+        goodnight.classList.add('show');
+    }, t);
+
+    // 顯示星星描述三行
+    t += 700;
+    const afterGoodnight = [...document.querySelectorAll('.line.hidden[data-after="goodnight"]'),
+    ...document.querySelectorAll('.line.hidden[data-after="star-desc"]')];
+
+    afterGoodnight.forEach((el, i) => {
+        setTimeout(() => {
+            el.classList.remove('hidden');
+            el.classList.add('show');
+        }, t + i * 450);
+    });
+
+    // 顯示可點擊星星
+    t += 1400;
+    setTimeout(() => {
+        wishStar.classList.remove('hidden');
+        wishStar.classList.add('show');
+    }, t);
+
+    // 點擊星星 → 閃光 → 顯示「如果你覺得累了…」
+    wishStar.addEventListener('click', () => {
+        wishStar.classList.add('sparkle');
+        setTimeout(() => {
+            comfort.classList.remove('hidden');
+            comfort.classList.add('show');
+            // 讓螢幕稍微滾下，確保可見
+            comfort.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 420);
+        // 二次點擊也只做小動畫
+        setTimeout(() => wishStar.classList.remove('sparkle'), 800);
+    });
+});
+
+
+document.addEventListener('scroll', () => {
+    const btn = document.querySelector('.easter-egg-fab');
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const viewportHeight = window.innerHeight;
+    const fullHeight = document.documentElement.scrollHeight;
+
+    // 當滾動到最底（或接近最底 50px 以內）時顯示按鈕
+    if (scrollTop + viewportHeight >= fullHeight - 50) {
+        btn.classList.remove('hidden');
+    } else {
+        btn.classList.add('hidden');
+    }
+});
+

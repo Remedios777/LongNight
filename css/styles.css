@@ -3040,3 +3040,225 @@ blockquote.gospel {
     }
 }
 
+:root {
+    --bg1: #0a0f14;
+    --bg2: #000;
+    --text: #ecf0f1;
+    --panel: rgba(255,255,255,0.03);
+    --border: rgba(255,255,255,0.10);
+    --panel-strong: rgba(255,255,255,0.08);
+    --comment-bar: rgba(255,255,255,0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    background: radial-gradient(ellipse at center, var(--bg1) 0%, var(--bg2) 100%);
+    font-family: 'Noto Sans','Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    line-height: 1.75;
+    padding: 60px 20px;
+    overflow-x: hidden;
+}
+
+/* 背景星空 */
+.stars {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%;
+    animation: twinkle 2.4s infinite ease-in-out;
+    opacity: .2;
+}
+
+@keyframes twinkle {
+    50% {
+        opacity: 1;
+        transform: scale(1.6);
+    }
+}
+
+
+
+/* 內容容器 */
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2em;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px var(--panel-strong);
+}
+
+/* 逐行浮現 */
+.line {
+    margin: 0 0 1.2em 0;
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+    .line.show {
+        animation: fadeIn .9s ease forwards;
+    }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 類 HTML 註釋框 */
+.html-comment {
+    color: #b0b7bd;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    white-space: pre-wrap;
+    margin-top: 1.6em;
+    background: rgba(255,255,255,0.04);
+    padding: 1em 1.1em;
+    border-left: 3px solid var(--comment-bar);
+    font-size: 0.95em;
+    border-radius: 6px;
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+    .html-comment.show {
+        animation: fadeIn .9s ease forwards;
+    }
+
+/* 可點擊星星 */
+.wish-star {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    font-size: 28px;
+    line-height: 1;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    margin: 12px 0 0 0;
+    opacity: 0;
+    transform: scale(.9) translateY(4px);
+    transition: transform .25s ease, opacity .25s ease, box-shadow .25s ease;
+    color: #fff; /* 讓四角星字元是純白色 */
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.6), 0 0 12px rgba(255, 255, 255, 0.4); /* 加柔光 */
+}
+
+    .wish-star.show {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+    .wish-star:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 20px rgba(255,255,255,0.12);
+    }
+
+    .wish-star:active {
+        transform: scale(.96);
+    }
+
+/* 點擊後小火花 */
+.sparkle {
+    position: relative;
+    overflow: visible;
+}
+
+    .sparkle::after {
+        content: "";
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0 rgba(255,255,255,0.0);
+        animation: spark 700ms ease-out forwards;
+    }
+
+@keyframes spark {
+    30% {
+        box-shadow: 0 0 12px 6px rgba(255,255,255,0.35);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255,255,255,0.0);
+    }
+}
+
+/* 控制用 */
+.hidden {
+    display: none;
+}
+
+
+/* 右下角浮動彩蛋鈕 */
+.easter-egg-fab {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: #ffffff;
+    font-family: 'Noto Sans','Inter',sans-serif;
+    font-size: 14px;
+    backdrop-filter: blur(6px);
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+    .easter-egg-fab.hidden {
+        opacity: 0;
+        transform: translateY(20px); /* 向下移動一點，隱藏狀態 */
+        pointer-events: none;
+    }
+
+.egg-icon {
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 0 0 6px rgba(255,255,255,0.7), 0 0 14px rgba(255,255,255,0.45), 0 0 28px rgba(255,255,255,0.25);
+    animation: pulse 2.2s ease-in-out infinite;
+}
+
+.egg-text {
+    color: #eaf2f8;
+    text-shadow: 0 0 6px rgba(255,255,255,0.25);
+}
+
+@keyframes pulse {
+    0%,100% {
+        text-shadow: 0 0 4px rgba(255,255,255,0.55), 0 0 10px rgba(255,255,255,0.35), 0 0 20px rgba(255,255,255,0.18);
+    }
+
+    50% {
+        text-shadow: 0 0 8px rgba(255,255,255,0.9), 0 0 18px rgba(255,255,255,0.55), 0 0 36px rgba(255,255,255,0.35);
+    }
+}
+
