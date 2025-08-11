@@ -589,17 +589,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-document.addEventListener('scroll', () => {
-    const btn = document.querySelector('.easter-egg-fab');
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const viewportHeight = window.innerHeight;
-    const fullHeight = document.documentElement.scrollHeight;
-
-    // 當滾動到最底（或接近最底 50px 以內）時顯示按鈕
-    if (scrollTop + viewportHeight >= fullHeight - 50) {
-        btn.classList.remove('hidden');
-    } else {
-        btn.classList.add('hidden');
+window.addEventListener('load', () => {
+    const stars = document.querySelector('.stars');
+    if (stars) {
+        // 觸發一次重排/重繪
+        stars.style.opacity = '0.9999';
+        requestAnimationFrame(() => stars.style.opacity = '');
     }
 });
 
