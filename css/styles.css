@@ -376,6 +376,7 @@ body {
     display: inline-block;
     left: 50%;
     transform: translateX(-50%);
+
 }
 
 .section-title::after {
@@ -3329,6 +3330,193 @@ body {
     /* 所有註釋框在手機上整體稍微變小 */
     .html-comment {
         font-size: 0.92em;
+    }
+}
+
+
+/* --- Hero Heading with decorative underline --- */
+.relationship-page #hero-heading {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 48px 0 24px;
+    position: relative; /* 為偽元素定位做準備 */
+}
+
+    .relationship-page #hero-heading .hero-heading__text {
+        position: relative; /* 讓 ::after 附著在標題下 */
+        margin: 0;
+        text-align: center !important;
+        font-weight: 700;
+        line-height: 1.2;
+        font-size: clamp(28px, 4vw, 42px);
+    }
+
+        /* 下劃線效果：漸變，從透明到文字色再到透明 */
+        .relationship-page #hero-heading .hero-heading__text::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--text-color), transparent);
+        }
+
+
+/* =======================
+   雙視角時間線（精緻版）
+   ======================= */
+.relationship-page .dual-timeline {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+    /* 中央脊柱 */
+    .relationship-page .dual-timeline .timeline-spine {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 2px;
+        transform: translateX(-50%);
+        background: linear-gradient(180deg, transparent, var(--text-color), transparent);
+        opacity: .25;
+        pointer-events: none;
+    }
+
+    /* 每一行：左右兩欄 + 中央留白欄 */
+    .relationship-page .dual-timeline .timeline-row {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 56px 1fr; /* 左 / 中（脊柱區） / 右 */
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+        /* 中央事件（橫跨全欄） */
+        .relationship-page .dual-timeline .timeline-row.center {
+            grid-template-columns: 1fr; /* 單欄置中 */
+            justify-items: center;
+        }
+
+    /* 卡片樣式 */
+    .relationship-page .dual-timeline .timeline-card {
+        position: relative;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background-color: rgba(10, 15, 20, 0.7);
+        border: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+    }
+
+        .relationship-page .dual-timeline .timeline-card h3 {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            
+        }
+
+        /* 左右卡片占位 */
+        .relationship-page .dual-timeline .timeline-card.left {
+            grid-column: 1 / 2;
+        }
+
+        .relationship-page .dual-timeline .timeline-card.right {
+            grid-column: 3 / 4;
+        }
+
+    /* 中央卡片寬度 */
+    .relationship-page .dual-timeline .center-card {
+        grid-column: 1 / -1;
+        width: min(820px, 92%);
+        text-align: center;
+    }
+
+    /* 左右卡片朝向脊柱的小箭頭（精緻合流感） */
+    .relationship-page .dual-timeline .timeline-card.left::after,
+    .relationship-page .dual-timeline .timeline-card.right::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 8px solid transparent;
+        opacity: .7;
+    }
+
+    .relationship-page .dual-timeline .timeline-card.left::after {
+        right: -14px;
+        border-left-color: var(--text-color); /* 指向中心 */
+    }
+
+    .relationship-page .dual-timeline .timeline-card.right::after {
+        left: -14px;
+        border-right-color: var(--text-color); /* 指向中心 */
+    }
+
+    /* 每行的節點點綴（貼在脊柱上） */
+    .relationship-page .dual-timeline .timeline-row::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--text-color);
+        box-shadow: 0 0 12px 2px var(--glow-color);
+        opacity: .45;
+    }
+
+    /* 段落之間的向下箭頭（置中，微動畫） */
+    .relationship-page .dual-timeline .arrow {
+        text-align: center;
+        font-size: 1.35rem;
+        line-height: 1;
+        opacity: .8;
+        user-select: none;
+        margin: -.25rem 0;
+        animation: arrowFloat 1.8s ease-in-out infinite;
+    }
+
+@keyframes arrowFloat {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(4px);
+    }
+}
+
+/* 手機端：單欄堆疊，隱藏左右箭頭與節點，保留向下箭頭 */
+@media (max-width: 760px) {
+    .relationship-page .dual-timeline .timeline-row {
+        grid-template-columns: 1fr;
+    }
+
+    .relationship-page .dual-timeline .timeline-card.left,
+    .relationship-page .dual-timeline .timeline-card.right {
+        grid-column: 1 / -1;
+    }
+
+        .relationship-page .dual-timeline .timeline-card.left::after,
+        .relationship-page .dual-timeline .timeline-card.right::after,
+        .relationship-page .dual-timeline .timeline-row::before,
+        .relationship-page .dual-timeline .timeline-spine {
+            display: none;
+        }
+
+    .relationship-page .dual-timeline .center-card {
+        width: 100%;
+        text-align: left; /* 手機上閱讀更自然；想置中可改回 center */
     }
 }
 
