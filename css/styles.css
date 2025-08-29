@@ -1307,6 +1307,18 @@ body {
     margin-bottom: 1rem;
 }
 
+.paro-first-description p {
+
+    text-indent: 2em; /* 段首縮排兩個字寬 */
+}
+
+.paro-full-description p {
+    margin-bottom: 1rem;
+    margin-bottom: 1.5em; /* 段落間距 */
+    text-indent: 2em; /* 段首縮排兩個字寬 */
+    line-height: 1.8; /* 行距（讓段落內部更好讀） */
+}
+
 /* Gallery页面样式 */
 .gallery-page .content-container {
     display: flex;
