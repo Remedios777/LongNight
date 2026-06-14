@@ -3566,3 +3566,22 @@ body {
     border: 1px solid var(--border-color);
 }
 
+
+.modal-video {
+    width: 100%;
+    max-height:80vh;
+    max-width:800px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+    .modal-video {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+

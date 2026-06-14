@@ -26,6 +26,7 @@
             <button class="view-toggle" data-view="concept-grid">概念艺术-网格</button>
             <button class="view-toggle" data-view="concept-slideshow">概念艺术-幻灯片</button>
         </div>
+    </div>
 
         <h2 class="subsection-title">Gallery</h2>
         <p class="gallery-intro">救世主拯救了世界的故事会流传千古，但这段不为人知的爱情只有你一个人见证。 </p>
@@ -50,19 +51,21 @@
                 </div>
 
                 <div class="slide">
-                    <video class="slide-video" controls>
-                        <source src="images/dount.MP4" type="video/mp4">
-
-                    </video>
+                    <img src="images/dount-cover.JPG" alt="奇幻世界AU" class="slide-media" loading="lazy">
                     <div class="slide-caption">
-                        <h3>奇幻世界AU</h3>
-                        <p>奇幻世界AU中，Noah作为圣光法师，穿着白色和金色相间的长袍，袍子上绣有光明符文，手持水晶法杖。Laertes作为魔染使者，则穿着深色的皮革装备，上面缠绕着紫色的魔染能量，形成独特的花纹，背后披着一件能随风飘动的斗篷。</p>
-                        <button class="view-details" data-target="costume-modal-fantasy">查看详情</button>
+                        <h3>结局</h3>
+                        <p>
+                            我们会在世界的尽头再相会吗？
+                        </p>
+                        <p>
+                            属于你的这个故事——那会是个美好的故事吗？
+                        </p>
+                        <button class="view-details" data-target="costume-modal-fantasy">点击播放</button>
                     </div>
                 </div>
 
                 <div class="slide">
-                    <img src="images/story1.jpg" alt="星际AU服装设计">
+                    <img src="images/story1.JPG" alt="星际AU服装设计">
                     <div class="slide-caption">
                         <h3>热恋期小日常</h3>
                         <p>
@@ -76,7 +79,7 @@
                 </div>
 
                 <div class="slide">
-                    <img src="images/story2.jpg" alt="中式克鲁苏AU服装设计">
+                    <img src="images/story2.JPG" alt="中式克鲁苏AU服装设计">
                     <div class="slide-caption">
                         <h3>热恋期小日常</h3>
                         <p>
@@ -141,19 +144,21 @@
                     </div>
 
                     <div class="slide">
-                        <video class="slide-video" controls>
-                            <source src="images/dount.MP4" type="video/mp4">
-                            
-                        </video>
+                        <img src="images/dount-cover.JPG" alt="奇幻世界AU" class="slide-media" loading="lazy">
                         <div class="slide-caption">
-                            <h3>奇幻世界AU</h3>
-                            <p>奇幻世界AU中，Noah作为圣光法师，穿着白色和金色相间的长袍，袍子上绣有光明符文，手持水晶法杖。Laertes作为魔染使者，则穿着深色的皮革装备，上面缠绕着紫色的魔染能量，形成独特的花纹，背后披着一件能随风飘动的斗篷。</p>
-                            <button class="view-details" data-target="costume-modal-fantasy">查看详情</button>
+                            <h3>结局</h3>
+                            <p>
+                                我们会在世界的尽头再相会吗？
+                            </p>
+                            <p>
+                                属于你的这个故事——那会是个美好的故事吗？
+                            </p>                           
+                            <button class="view-details" data-target="costume-modal-fantasy">点击播放</button>
                         </div>
                     </div>
 
                     <div class="slide">
-                        <img src="images/story1.jpg" alt="星际AU服装设计">
+                        <img src="images/story1.JPG" alt="星际AU服装设计">
                         <div class="slide-caption">
                             <h3>热恋期小日常</h3>
                             <p>
@@ -167,7 +172,7 @@
                     </div>
 
                     <div class="slide">
-                        <img src="images/story2.jpg" alt="中式克鲁苏AU服装设计">
+                        <img src="images/story2.JPG" alt="中式克鲁苏AU服装设计">
                         <div class="slide-caption">
                             <h3>热恋期小日常</h3>
                             <p>
@@ -762,6 +767,18 @@
 
             </div>
         </div>
+
+        <div class="costume-modal" id="costume-modal-fantasy">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+
+                <video class="modal-video" controls playsinline preload="metadata" poster="images/dount-cover.jpg">
+                    <source src="images/dount.mp4" type="video/mp4">
+                    你的浏览器不支持视频播放。
+                </video>
+            </div>
+        </div>
+
 
         <div class="costume-modal" id="costume-modal-space">
             <div class="modal-content">
