@@ -87,7 +87,14 @@ body {
     background-position: center;
     opacity: 0.6;
     filter: brightness(0.8) contrast(1.2);
+    }
+
+@media (max-width: 768px) {
+    .bg-image {
+        background-position: 65% center;
+    }
 }
+
 
 .bg-fog {
     position: absolute;
